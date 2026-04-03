@@ -1,0 +1,77 @@
+{
+  "app": {
+    "name": "CalmType",
+    "subtitle": "Ruhiges Schreibtraining"
+  },
+  "common": {
+    "back": "Zurück",
+    "home": "Startseite",
+    "lessons": "Lektionen",
+    "settings": "Einstellungen",
+    "adult": "Bereich für Erwachsene",
+    "start": "Start",
+    "continue": "Weiter",
+    "close": "Schließen",
+    "yes": "Ja",
+    "no": "Nein"
+  },
+  "home": {
+    "title": "Startseite",
+    "continue": "Weiter",
+    "lessons": "Lektionen",
+    "settings": "Einstellungen",
+    "adult": "Bereich für Erwachsene",
+    "noProgress": "Du kannst mit der ersten Lektion beginnen."
+  },
+  "lessonList": {
+    "title": "Lektionen",
+    "start": "Lektion öffnen",
+    "resume": "Lektion fortsetzen",
+    "completed": "Lektion beendet",
+    "lessonLabel": "Lektion {{order}}"
+  },
+  "practiceIntro": {
+    "title": "Lektion vorbereiten",
+    "newKeys": "Neue Tasten",
+    "reviewKeys": "Wiederholung",
+    "exercises": "Übungen",
+    "start": "Übung starten"
+  },
+  "exercise": {
+    "pause": "Pause",
+    "repeat": "Wiederholen",
+    "skip": "Überspringen",
+    "progress": "Fortschritt",
+    "keyTarget": "Nächste Taste",
+    "hintTryKey": "Versuche diese Taste",
+    "hintLookKey": "Schau auf diese Taste"
+  },
+  "pause": {
+    "title": "Pause",
+    "resume": "Weiter machen",
+    "lessonList": "Zur Lektionenliste",
+    "home": "Zur Startseite"
+  },
+  "complete": {
+    "title": "Du hast diese Lektion beendet.",
+    "repeat": "Lektion wiederholen",
+    "next": "Zur nächsten Lektion",
+    "home": "Zur Startseite"
+  },
+  "settings": {
+    "title": "Einstellungen",
+    "keyboardHints": "Tastaturhilfe",
+    "fingerHints": "Fingerhilfe",
+    "sentences": "Sätze üben",
+    "highContrast": "Hoher Kontrast",
+    "inputMode": "Eingabemodus",
+    "inputIgnore": "Ignorieren",
+    "inputGentle": "Sanfter Hinweis"
+  },
+  "adult": {
+    "title": "Bereich für Erwachsene",
+    "reset": "Fortschritt zurücksetzen",
+    "resetConfirm": "Möchtest du den gespeicherten Stand wirklich zurücksetzen?",
+    "resetDescription": "Dieser Bereich ist für Betreuungspersonen."
+  }
+}
