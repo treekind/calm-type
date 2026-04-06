@@ -121,6 +121,28 @@ describe('App gentle input mode', () => {
     expect(findKeyTargetLine()).toHaveTextContent('S');
   });
 
+  it('does not accept uppercase input when lowercase is expected', async () => {
+    const user = userEvent.setup();
+    render(<App />);
+
+    await user.click(screen.getByRole('button', { name: uiText.home.lessons }));
+    await user.click(screen.getAllByRole('button', { name: uiText.lessonList.start })[0]);
+    await user.click(screen.getByRole('button', { name: uiText.practiceIntro.start }));
+
+    const findKeyTargetLine = () => screen.getByText((_, element) => {
+      return element?.tagName.toLowerCase() === 'p' &&
+        (element.textContent ?? '').includes(`${uiText.exercise.keyTarget}:`);
+    });
+
+    expect(findKeyTargetLine()).toHaveTextContent('a');
+
+    fireEvent.keyDown(window, { key: 'A' });
+    expect(findKeyTargetLine()).toHaveTextContent('a');
+
+    fireEvent.keyDown(window, { key: 'a' });
+    expect(findKeyTargetLine()).toHaveTextContent('ö');
+  });
+
   it('requires compose sequence for uppercase umlauts', async () => {
     const user = userEvent.setup();
     localStorage.setItem(

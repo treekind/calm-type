@@ -132,6 +132,15 @@ export function isUppercaseLetter(input: string): boolean {
   return upper !== lower && input === upper;
 }
 
+function isLowercaseLetter(input: string): boolean {
+  if (input.length !== 1) {
+    return false;
+  }
+  const upper = input.toUpperCase();
+  const lower = input.toLowerCase();
+  return upper !== lower && input === lower;
+}
+
 export interface InputStep {
   kind: "diaeresis" | "char";
   char?: string;
@@ -166,6 +175,9 @@ export function matchesInputStep(step: InputStep, pressedKey: string): boolean {
     return pressedKey === " ";
   }
   if (step.strictCase) {
+    return pressedKey === step.char;
+  }
+  if (isLowercaseLetter(step.char)) {
     return pressedKey === step.char;
   }
   return normalizeKey(pressedKey) === normalizeTargetChar(step.char);
