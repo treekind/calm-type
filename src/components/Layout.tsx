@@ -42,6 +42,16 @@ export default function Layout({
       >
         {children}
       </main>
+      <footer className="mt-4 text-center text-sm text-[var(--ink-soft)]">
+        <a
+          href="https://codeberg.org/maveonair/calm-type"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline decoration-[var(--line)] underline-offset-4 hover:text-[var(--ink)]"
+        >
+          Source code on Codeberg
+        </a>
+      </footer>
     </div>
   );
 }
