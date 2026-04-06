@@ -145,6 +145,5 @@ If it looks like a sentence → it must be a real sentence.
 
 - all lessons implemented
 - no punitive feedback
-- works offline
 - German UI everywhere
 - local progress works
