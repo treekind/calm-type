@@ -87,7 +87,7 @@ describe('App gentle input mode', () => {
     typeText('Heute übt die Gruppe ruhig.');
 
     expect(screen.getByText(/2\/7/)).toBeInTheDocument();
-    expect(screen.getByRole('heading', { name: 'Sätze' })).toBeInTheDocument();
+    expect(screen.queryByRole('heading', { name: 'Sätze' })).not.toBeInTheDocument();
   });
 
   it('requires uppercase output when an uppercase character is expected', async () => {

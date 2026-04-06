@@ -465,7 +465,11 @@ export default function App() {
   }
 
   return (
-    <Layout title={title} subtitle={subtitle}>
+    <Layout
+      title={title}
+      subtitle={subtitle}
+      showHeader={screen.name !== "exercise"}
+    >
       {content}
     </Layout>
   );
