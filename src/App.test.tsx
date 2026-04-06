@@ -26,25 +26,25 @@ describe('App gentle input mode', () => {
     await user.click(screen.getAllByRole('button', { name: uiText.lessonList.start })[0]);
     await user.click(screen.getByRole('button', { name: uiText.practiceIntro.start }));
 
-    expect(screen.getByText('Drücke F.')).toBeInTheDocument();
+    expect(screen.getByText('Drücke A.')).toBeInTheDocument();
 
     fireEvent.keyDown(window, { key: 'g' });
 
-    expect(screen.getByText('Drücke F.')).toBeInTheDocument();
+    expect(screen.getByText('Drücke A.')).toBeInTheDocument();
     expect(screen.getByText(uiText.exercise.hintTryKey)).toBeInTheDocument();
 
-    fireEvent.keyDown(window, { key: 'f' });
+    fireEvent.keyDown(window, { key: 'a' });
 
-    expect(screen.getByText('Drücke J.')).toBeInTheDocument();
+    expect(screen.getByText('Drücke Ö.')).toBeInTheDocument();
     expect(screen.queryByText(uiText.exercise.hintTryKey)).not.toBeInTheDocument();
   });
 
-  it('advances through punctuation exercises with ! and ?', async () => {
+  it('advances through ? and q exercises', async () => {
     const user = userEvent.setup();
     localStorage.setItem(
       'calmtype.progress',
       JSON.stringify({
-        currentLessonId: 'lesson-15',
+        currentLessonId: 'lesson-13',
         currentExerciseIndex: 0,
         currentCharIndex: 0,
         completedLessonIds: [],
@@ -56,22 +56,22 @@ describe('App gentle input mode', () => {
     await user.click(screen.getByRole('button', { name: uiText.home.continue }));
     await user.click(screen.getByRole('button', { name: uiText.practiceIntro.start }));
 
-    expect(screen.getByText('Drücke das Ausrufezeichen.')).toBeInTheDocument();
-
-    fireEvent.keyDown(window, { key: '!' });
     expect(screen.getByText('Drücke das Fragezeichen.')).toBeInTheDocument();
 
     fireEvent.keyDown(window, { key: '?' });
-    expect(screen.getByText('Tippe den Satz.')).toBeInTheDocument();
-    expect(screen.getByText(/3\/4/)).toBeInTheDocument();
+    expect(screen.getByText('Drücke Q.')).toBeInTheDocument();
+
+    fireEvent.keyDown(window, { key: 'q' });
+    expect(screen.getByText('Tippe das Wort.')).toBeInTheDocument();
+    expect(screen.getByText(/3\/6/)).toBeInTheDocument();
   });
 
-  it('progresses through multiple sentence exercises in sentence practice lesson', async () => {
+  it('progresses through multiple sentence exercises in final sentence lesson', async () => {
     const user = userEvent.setup();
     localStorage.setItem(
       'calmtype.progress',
       JSON.stringify({
-        currentLessonId: 'lesson-16',
+        currentLessonId: 'lesson-19',
         currentExerciseIndex: 0,
         currentCharIndex: 0,
         completedLessonIds: [],
@@ -83,10 +83,78 @@ describe('App gentle input mode', () => {
     await user.click(screen.getByRole('button', { name: uiText.home.continue }));
     await user.click(screen.getByRole('button', { name: uiText.practiceIntro.start }));
 
-    expect(screen.getByText(/1\/5/)).toBeInTheDocument();
-    typeText('Nina malt ein Haus.');
+    expect(screen.getByText(/1\/7/)).toBeInTheDocument();
+    typeText('Heute übt die Gruppe ruhig.');
 
-    expect(screen.getByText(/2\/5/)).toBeInTheDocument();
-    expect(screen.getByRole('heading', { name: 'Satzpraxis 1' })).toBeInTheDocument();
+    expect(screen.getByText(/2\/7/)).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: 'Sätze' })).toBeInTheDocument();
+  });
+
+  it('requires uppercase output when an uppercase character is expected', async () => {
+    const user = userEvent.setup();
+    localStorage.setItem(
+      'calmtype.progress',
+      JSON.stringify({
+        currentLessonId: 'lesson-6',
+        currentExerciseIndex: 0,
+        currentCharIndex: 0,
+        completedLessonIds: [],
+      }),
+    );
+
+    render(<App />);
+
+    await user.click(screen.getByRole('button', { name: uiText.home.continue }));
+    await user.click(screen.getByRole('button', { name: uiText.practiceIntro.start }));
+
+    const findKeyTargetLine = () => screen.getByText((_, element) => {
+      return element?.tagName.toLowerCase() === 'p' &&
+        (element.textContent ?? '').includes(`${uiText.exercise.keyTarget}:`);
+    });
+
+    expect(findKeyTargetLine()).toHaveTextContent('A');
+
+    fireEvent.keyDown(window, { key: 'a' });
+    expect(findKeyTargetLine()).toHaveTextContent('A');
+
+    fireEvent.keyDown(window, { key: 'A' });
+    expect(findKeyTargetLine()).toHaveTextContent('S');
+  });
+
+  it('requires compose sequence for uppercase umlauts', async () => {
+    const user = userEvent.setup();
+    localStorage.setItem(
+      'calmtype.progress',
+      JSON.stringify({
+        currentLessonId: 'lesson-12',
+        currentExerciseIndex: 0,
+        currentCharIndex: 0,
+        completedLessonIds: [],
+      }),
+    );
+
+    render(<App />);
+
+    await user.click(screen.getByRole('button', { name: uiText.home.continue }));
+    await user.click(screen.getByRole('button', { name: uiText.practiceIntro.start }));
+
+    const findKeyTargetLine = () => screen.getByText((_, element) => {
+      return element?.tagName.toLowerCase() === 'p' &&
+        (element.textContent ?? '').includes(`${uiText.exercise.keyTarget}:`);
+    });
+
+    expect(findKeyTargetLine()).toHaveTextContent('Ü');
+
+    fireEvent.keyDown(window, { key: 'Ü' });
+    expect(findKeyTargetLine()).toHaveTextContent('Ü');
+
+    fireEvent.keyDown(window, { key: 'Dead' });
+    expect(findKeyTargetLine()).toHaveTextContent('Ü');
+
+    fireEvent.keyDown(window, { key: 'u' });
+    expect(findKeyTargetLine()).toHaveTextContent('Ü');
+
+    fireEvent.keyDown(window, { key: 'U' });
+    expect(findKeyTargetLine()).toHaveTextContent('Ä');
   });
 });

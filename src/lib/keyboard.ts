@@ -2,6 +2,8 @@ export interface KeyboardKey {
   id: string;
   base: string;
   shift?: string;
+  alt?: string[];
+  composeUpper?: string;
   finger: number | null;
   wide?: boolean;
 }
@@ -10,8 +12,8 @@ export const qwertzChRows: KeyboardKey[][] = [
   [
     { id: "caret", base: "§", shift: "°", finger: 1 },
     { id: "digit-1", base: "1", shift: "+", finger: 1 },
-    { id: "digit-2", base: "2", shift: '"', finger: 2 },
-    { id: "digit-3", base: "3", shift: "*", finger: 3 },
+    { id: "digit-2", base: "2", shift: '"', alt: ["@"], finger: 2 },
+    { id: "digit-3", base: "3", shift: "*", alt: ["#"], finger: 3 },
     { id: "digit-4", base: "4", shift: "ç", finger: 4 },
     { id: "digit-5", base: "5", shift: "%", finger: 4 },
     { id: "digit-6", base: "6", shift: "&", finger: 5 },
@@ -19,7 +21,7 @@ export const qwertzChRows: KeyboardKey[][] = [
     { id: "digit-8", base: "8", shift: "(", finger: 6 },
     { id: "digit-9", base: "9", shift: ")", finger: 7 },
     { id: "digit-0", base: "0", shift: "=", finger: 8 },
-    { id: "apostrophe", base: "'", shift: "?", finger: 8 },
+    { id: "apostrophe", base: "'", shift: "?", alt: ["~"], finger: 8 },
   ],
   [
     { id: "q", base: "q", finger: 1 },
@@ -32,7 +34,7 @@ export const qwertzChRows: KeyboardKey[][] = [
     { id: "i", base: "i", finger: 6 },
     { id: "o", base: "o", finger: 7 },
     { id: "p", base: "p", finger: 8 },
-    { id: "ue", base: "ü", shift: "Ü", finger: 8 },
+    { id: "ue", base: "ü", composeUpper: "Ü", finger: 8 },
     { id: "diaeresis", base: "¨", shift: "!", finger: 8 },
   ],
   [
@@ -45,10 +47,12 @@ export const qwertzChRows: KeyboardKey[][] = [
     { id: "j", base: "j", finger: 5 },
     { id: "k", base: "k", finger: 6 },
     { id: "l", base: "l", finger: 7 },
-    { id: "oe", base: "ö", shift: "Ö", finger: 8 },
-    { id: "ae", base: "ä", shift: "Ä", finger: 8 },
+    { id: "oe", base: "ö", shift: "é", composeUpper: "Ö", finger: 8 },
+    { id: "ae", base: "ä", shift: "à", composeUpper: "Ä", finger: 8 },
+    { id: "$", base: "$", shift: "£", finger: 8 },
   ],
   [
+    { id: "<", base: "<", shift: ">", finger: 1 },
     { id: "y", base: "y", finger: 1 },
     { id: "x", base: "x", finger: 2 },
     { id: "c", base: "c", finger: 3 },
@@ -78,8 +82,20 @@ export function keyShiftLabel(key: KeyboardKey): string | null {
   return key.shift;
 }
 
+export function keyComposeLabel(key: KeyboardKey): string | null {
+  if (!key.composeUpper || key.wide) {
+    return null;
+  }
+  return key.composeUpper;
+}
+
 function charsForKey(key: KeyboardKey): string[] {
-  const chars = [key.base, key.shift, DISPLAY_LABELS[key.id]]
+  const chars = [
+    key.base,
+    key.shift,
+    ...(key.alt ?? []),
+    DISPLAY_LABELS[key.id],
+  ]
     .filter((value): value is string => Boolean(value))
     .map((value) => normalizeTargetChar(value));
   return Array.from(new Set(chars));
@@ -91,6 +107,126 @@ export function keyMatchesTarget(key: KeyboardKey, targetKey: string): boolean {
     return false;
   }
   return charsForKey(key).includes(expected);
+}
+
+export type ShiftSide = "left" | "right";
+
+const COMPOSE_UPPER_UMLAUT_BASE: Record<string, string> = {
+  Ä: "A",
+  Ö: "O",
+  Ü: "U",
+};
+
+export function getComposeBaseForUppercaseUmlaut(
+  targetKey: string,
+): string | null {
+  return COMPOSE_UPPER_UMLAUT_BASE[targetKey] ?? null;
+}
+
+export function isUppercaseLetter(input: string): boolean {
+  if (input.length !== 1) {
+    return false;
+  }
+  const upper = input.toUpperCase();
+  const lower = input.toLowerCase();
+  return upper !== lower && input === upper;
+}
+
+export interface InputStep {
+  kind: "diaeresis" | "char";
+  char?: string;
+  strictCase?: boolean;
+}
+
+export function getInputStepsForTarget(targetKey: string): InputStep[] {
+  const composeBase = getComposeBaseForUppercaseUmlaut(targetKey);
+  if (composeBase) {
+    return [
+      { kind: "diaeresis" },
+      { kind: "char", char: composeBase, strictCase: true },
+    ];
+  }
+  return [
+    {
+      kind: "char",
+      char: targetKey,
+      strictCase: isUppercaseLetter(targetKey),
+    },
+  ];
+}
+
+export function matchesInputStep(step: InputStep, pressedKey: string): boolean {
+  if (step.kind === "diaeresis") {
+    return isDiaeresisInput(pressedKey);
+  }
+  if (!step.char) {
+    return false;
+  }
+  if (step.char === " ") {
+    return pressedKey === " ";
+  }
+  if (step.strictCase) {
+    return pressedKey === step.char;
+  }
+  return normalizeKey(pressedKey) === normalizeTargetChar(step.char);
+}
+
+export function isDiaeresisInput(input: string): boolean {
+  return input === "Dead" || input === "¨";
+}
+
+export function getKeyboardHintTargets(targetKey: string): string[] {
+  const composeBase = getComposeBaseForUppercaseUmlaut(targetKey);
+  if (composeBase) {
+    return ["¨", composeBase.toLowerCase()];
+  }
+  return [targetKey];
+}
+
+function findKeyForTarget(targetKey: string): KeyboardKey | null {
+  for (const row of qwertzChRows) {
+    for (const key of row) {
+      if (key.wide) {
+        continue;
+      }
+
+      if (isUppercaseLetter(targetKey)) {
+        if (key.base.toLowerCase() === targetKey.toLowerCase()) {
+          return key;
+        }
+        continue;
+      }
+
+      if (keyMatchesTarget(key, targetKey)) {
+        return key;
+      }
+    }
+  }
+  return null;
+}
+
+function requiresShift(targetKey: string): boolean {
+  if (isUppercaseLetter(targetKey)) {
+    return true;
+  }
+  const key = findKeyForTarget(targetKey);
+  if (!key || !key.shift) {
+    return false;
+  }
+  return normalizeTargetChar(key.shift) === normalizeTargetChar(targetKey);
+}
+
+export function getRecommendedShiftSide(targetKey: string): ShiftSide | null {
+  const composeBase = getComposeBaseForUppercaseUmlaut(targetKey);
+  const shiftTarget = composeBase ?? targetKey;
+  if (!requiresShift(shiftTarget)) {
+    return null;
+  }
+  const key = findKeyForTarget(shiftTarget);
+  if (!key?.finger) {
+    return null;
+  }
+  return key.finger <= 4 ? "right" : "left";
 }
 
 export function normalizeKey(input: string): string {

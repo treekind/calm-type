@@ -5,589 +5,2393 @@
     {
       "id": "lesson-1",
       "order": 1,
-      "title": "F und J",
-      "newKeys": ["f", "j"],
+      "title": "asdf jklö",
+      "newKeys": [
+        "a",
+        "s",
+        "d",
+        "f",
+        "j",
+        "k",
+        "l",
+        "ö"
+      ],
       "reviewKeys": [],
       "exercises": [
         {
           "id": "l1-e1",
           "type": "single-key",
-          "instruction": "Drücke F.",
-          "targetText": "f",
-          "targetKeys": ["f"]
+          "instruction": "Drücke A.",
+          "targetText": "a",
+          "targetKeys": [
+            "a"
+          ]
         },
         {
           "id": "l1-e2",
           "type": "single-key",
-          "instruction": "Drücke J.",
-          "targetText": "j",
-          "targetKeys": ["j"]
+          "instruction": "Drücke Ö.",
+          "targetText": "ö",
+          "targetKeys": [
+            "ö"
+          ]
         },
         {
           "id": "l1-e3",
           "type": "pattern",
           "instruction": "Tippe das Muster.",
-          "targetText": "f j f j",
-          "targetKeys": ["f", "j", "space"]
+          "targetText": "asdf jklö",
+          "targetKeys": [
+            "a",
+            "s",
+            "d",
+            "f",
+            "j",
+            "k",
+            "l",
+            "ö",
+            "space"
+          ]
+        },
+        {
+          "id": "l1-e4",
+          "type": "pattern",
+          "instruction": "Tippe das Muster.",
+          "targetText": "a s d f j k l ö",
+          "targetKeys": [
+            "a",
+            "s",
+            "d",
+            "f",
+            "j",
+            "k",
+            "l",
+            "ö",
+            "space"
+          ]
+        },
+        {
+          "id": "l1-e5",
+          "type": "pattern",
+          "instruction": "Tippe das Muster.",
+          "targetText": "asdf jklö",
+          "targetKeys": [
+            "a",
+            "s",
+            "d",
+            "f",
+            "space",
+            "j",
+            "k",
+            "l",
+            "ö"
+          ]
+        },
+        {
+          "id": "l1-e6",
+          "type": "pattern",
+          "instruction": "Tippe das Muster.",
+          "targetText": "a s d f j k l ö",
+          "targetKeys": [
+            "a",
+            "space",
+            "s",
+            "d",
+            "f",
+            "j",
+            "k",
+            "l",
+            "ö"
+          ]
+        },
+        {
+          "id": "l1-e7",
+          "type": "pattern",
+          "instruction": "Tippe das Muster.",
+          "targetText": "fj fj as sk",
+          "targetKeys": [
+            "f",
+            "j",
+            "space",
+            "a",
+            "s",
+            "k"
+          ]
         }
       ]
     },
     {
       "id": "lesson-2",
       "order": 2,
-      "title": "D und K",
-      "newKeys": ["d", "k"],
-      "reviewKeys": ["f", "j"],
+      "title": "e n",
+      "newKeys": [
+        "e",
+        "n"
+      ],
+      "reviewKeys": [
+        "a",
+        "s",
+        "d",
+        "f",
+        "j",
+        "k",
+        "l",
+        "ö"
+      ],
       "exercises": [
         {
           "id": "l2-e1",
           "type": "single-key",
-          "instruction": "Drücke D.",
-          "targetText": "d",
-          "targetKeys": ["d"]
+          "instruction": "Drücke E.",
+          "targetText": "e",
+          "targetKeys": [
+            "e"
+          ]
         },
         {
           "id": "l2-e2",
           "type": "single-key",
-          "instruction": "Drücke K.",
-          "targetText": "k",
-          "targetKeys": ["k"]
+          "instruction": "Drücke N.",
+          "targetText": "n",
+          "targetKeys": [
+            "n"
+          ]
         },
         {
           "id": "l2-e3",
           "type": "pattern",
           "instruction": "Tippe das Muster.",
-          "targetText": "d f j k",
-          "targetKeys": ["d", "f", "j", "k", "space"]
+          "targetText": "en ne es",
+          "targetKeys": [
+            "e",
+            "n",
+            "s",
+            "space"
+          ]
+        },
+        {
+          "id": "l2-e4",
+          "type": "real-word",
+          "instruction": "Tippe das Wort.",
+          "targetText": "lesen",
+          "targetKeys": [
+            "l",
+            "e",
+            "s",
+            "n"
+          ]
+        },
+        {
+          "id": "l2-e5",
+          "type": "pattern",
+          "instruction": "Tippe das Muster.",
+          "targetText": "en en en",
+          "targetKeys": [
+            "e",
+            "n",
+            "space"
+          ]
+        },
+        {
+          "id": "l2-e6",
+          "type": "pattern",
+          "instruction": "Tippe das Muster.",
+          "targetText": "lesen lesen",
+          "targetKeys": [
+            "l",
+            "e",
+            "s",
+            "n",
+            "space"
+          ]
+        },
+        {
+          "id": "l2-e7",
+          "type": "real-word",
+          "instruction": "Tippe das Wort.",
+          "targetText": "nase",
+          "targetKeys": [
+            "n",
+            "a",
+            "s",
+            "e"
+          ]
         }
       ]
     },
     {
       "id": "lesson-3",
       "order": 3,
-      "title": "S und L",
-      "newKeys": ["s", "l"],
-      "reviewKeys": ["d", "f", "j", "k"],
+      "title": "r i",
+      "newKeys": [
+        "r",
+        "i"
+      ],
+      "reviewKeys": [
+        "a",
+        "s",
+        "d",
+        "e",
+        "f",
+        "j",
+        "k",
+        "l",
+        "n",
+        "ö"
+      ],
       "exercises": [
         {
           "id": "l3-e1",
           "type": "single-key",
-          "instruction": "Drücke S.",
-          "targetText": "s",
-          "targetKeys": ["s"]
+          "instruction": "Drücke R.",
+          "targetText": "r",
+          "targetKeys": [
+            "r"
+          ]
         },
         {
           "id": "l3-e2",
           "type": "single-key",
-          "instruction": "Drücke L.",
-          "targetText": "l",
-          "targetKeys": ["l"]
+          "instruction": "Drücke I.",
+          "targetText": "i",
+          "targetKeys": [
+            "i"
+          ]
         },
         {
           "id": "l3-e3",
+          "type": "real-word",
+          "instruction": "Tippe das Wort.",
+          "targetText": "reise",
+          "targetKeys": [
+            "r",
+            "e",
+            "i",
+            "s"
+          ]
+        },
+        {
+          "id": "l3-e4",
+          "type": "real-word",
+          "instruction": "Tippe das Wort.",
+          "targetText": "sirene",
+          "targetKeys": [
+            "s",
+            "i",
+            "r",
+            "e",
+            "n"
+          ]
+        },
+        {
+          "id": "l3-e5",
           "type": "pattern",
           "instruction": "Tippe das Muster.",
-          "targetText": "s d f j k l",
-          "targetKeys": ["s", "d", "f", "j", "k", "l", "space"]
+          "targetText": "ri ri ri",
+          "targetKeys": [
+            "r",
+            "i",
+            "space"
+          ]
+        },
+        {
+          "id": "l3-e6",
+          "type": "real-word",
+          "instruction": "Tippe das Wort.",
+          "targetText": "reisen",
+          "targetKeys": [
+            "r",
+            "e",
+            "i",
+            "s",
+            "n"
+          ]
+        },
+        {
+          "id": "l3-e7",
+          "type": "real-word",
+          "instruction": "Tippe das Wort.",
+          "targetText": "serie",
+          "targetKeys": [
+            "s",
+            "e",
+            "r",
+            "i"
+          ]
         }
       ]
     },
     {
       "id": "lesson-4",
       "order": 4,
-      "title": "A",
-      "newKeys": ["a"],
-      "reviewKeys": ["s", "d", "f", "j", "k", "l"],
+      "title": "t h",
+      "newKeys": [
+        "t",
+        "h"
+      ],
+      "reviewKeys": [
+        "a",
+        "s",
+        "d",
+        "e",
+        "f",
+        "i",
+        "j",
+        "k",
+        "l",
+        "n",
+        "r",
+        "ö"
+      ],
       "exercises": [
         {
           "id": "l4-e1",
           "type": "single-key",
-          "instruction": "Drücke A.",
-          "targetText": "a",
-          "targetKeys": ["a"]
+          "instruction": "Drücke T.",
+          "targetText": "t",
+          "targetKeys": [
+            "t"
+          ]
         },
         {
           "id": "l4-e2",
-          "type": "real-word",
-          "instruction": "Tippe das Wort.",
-          "targetText": "das",
-          "targetKeys": ["d", "a", "s"]
+          "type": "single-key",
+          "instruction": "Drücke H.",
+          "targetText": "h",
+          "targetKeys": [
+            "h"
+          ]
         },
         {
           "id": "l4-e3",
           "type": "real-word",
           "instruction": "Tippe das Wort.",
-          "targetText": "ja",
-          "targetKeys": ["j", "a"]
+          "targetText": "heiter",
+          "targetKeys": [
+            "h",
+            "e",
+            "i",
+            "t",
+            "r"
+          ]
+        },
+        {
+          "id": "l4-e4",
+          "type": "real-word",
+          "instruction": "Tippe das Wort.",
+          "targetText": "theater",
+          "targetKeys": [
+            "t",
+            "h",
+            "e",
+            "a",
+            "r"
+          ]
+        },
+        {
+          "id": "l4-e5",
+          "type": "pattern",
+          "instruction": "Tippe das Muster.",
+          "targetText": "th th th",
+          "targetKeys": [
+            "t",
+            "h",
+            "space"
+          ]
+        },
+        {
+          "id": "l4-e6",
+          "type": "real-word",
+          "instruction": "Tippe das Wort.",
+          "targetText": "hirte",
+          "targetKeys": [
+            "h",
+            "i",
+            "r",
+            "t",
+            "e"
+          ]
+        },
+        {
+          "id": "l4-e7",
+          "type": "real-word",
+          "instruction": "Tippe das Wort.",
+          "targetText": "heiter",
+          "targetKeys": [
+            "h",
+            "e",
+            "i",
+            "t",
+            "r"
+          ]
         }
       ]
     },
     {
       "id": "lesson-5",
       "order": 5,
-      "title": "E und I",
-      "newKeys": ["e", "i"],
-      "reviewKeys": ["a", "s", "d", "f", "j", "k", "l"],
+      "title": "c u",
+      "newKeys": [
+        "c",
+        "u"
+      ],
+      "reviewKeys": [
+        "a",
+        "s",
+        "d",
+        "e",
+        "f",
+        "h",
+        "i",
+        "j",
+        "k",
+        "l",
+        "n",
+        "r",
+        "t",
+        "ö"
+      ],
       "exercises": [
         {
           "id": "l5-e1",
-          "type": "real-word",
-          "instruction": "Tippe das Wort.",
-          "targetText": "die",
-          "targetKeys": ["d", "i", "e"]
+          "type": "single-key",
+          "instruction": "Drücke C.",
+          "targetText": "c",
+          "targetKeys": [
+            "c"
+          ]
         },
         {
           "id": "l5-e2",
-          "type": "real-word",
-          "instruction": "Tippe das Wort.",
-          "targetText": "sei",
-          "targetKeys": ["s", "e", "i"]
+          "type": "single-key",
+          "instruction": "Drücke U.",
+          "targetText": "u",
+          "targetKeys": [
+            "u"
+          ]
         },
         {
           "id": "l5-e3",
-          "type": "real-sentence",
-          "instruction": "Tippe den Satz.",
-          "targetText": "Ali ist leise.",
-          "targetKeys": ["a", "l", "i", "s", "t", "e", ".", "space"]
+          "type": "real-word",
+          "instruction": "Tippe das Wort.",
+          "targetText": "ruhe",
+          "targetKeys": [
+            "r",
+            "u",
+            "h",
+            "e"
+          ]
+        },
+        {
+          "id": "l5-e4",
+          "type": "real-word",
+          "instruction": "Tippe das Wort.",
+          "targetText": "suche",
+          "targetKeys": [
+            "s",
+            "u",
+            "c",
+            "h",
+            "e"
+          ]
+        },
+        {
+          "id": "l5-e5",
+          "type": "pattern",
+          "instruction": "Tippe das Muster.",
+          "targetText": "cu cu cu",
+          "targetKeys": [
+            "c",
+            "u",
+            "space"
+          ]
+        },
+        {
+          "id": "l5-e6",
+          "type": "real-word",
+          "instruction": "Tippe das Wort.",
+          "targetText": "suche",
+          "targetKeys": [
+            "s",
+            "u",
+            "c",
+            "h",
+            "e"
+          ]
+        },
+        {
+          "id": "l5-e7",
+          "type": "real-word",
+          "instruction": "Tippe das Wort.",
+          "targetText": "ruhe",
+          "targetKeys": [
+            "r",
+            "u",
+            "h",
+            "e"
+          ]
         }
       ]
     },
     {
       "id": "lesson-6",
       "order": 6,
-      "title": "N und R",
-      "newKeys": ["n", "r"],
-      "reviewKeys": ["a", "d", "e", "f", "i", "j", "k", "l", "s"],
+      "title": "Grossschreibung",
+      "newKeys": [
+        "A",
+        "S",
+        "D",
+        "F",
+        "J",
+        "K",
+        "L",
+        "Ö",
+        "E",
+        "N",
+        "R",
+        "I",
+        "T",
+        "H",
+        "C",
+        "U"
+      ],
+      "reviewKeys": [
+        "a",
+        "s",
+        "d",
+        "f",
+        "j",
+        "k",
+        "l",
+        "ö",
+        "e",
+        "n",
+        "r",
+        "i",
+        "t",
+        "h",
+        "c",
+        "u"
+      ],
       "exercises": [
         {
           "id": "l6-e1",
-          "type": "real-word",
-          "instruction": "Tippe das Wort.",
-          "targetText": "nein",
-          "targetKeys": ["n", "e", "i"]
+          "type": "pattern",
+          "instruction": "Tippe das Muster.",
+          "targetText": "ASDF JKLÖ",
+          "targetKeys": [
+            "a",
+            "s",
+            "d",
+            "f",
+            "j",
+            "k",
+            "l",
+            "ö",
+            "space"
+          ]
         },
         {
           "id": "l6-e2",
           "type": "real-word",
           "instruction": "Tippe das Wort.",
-          "targetText": "rad",
-          "targetKeys": ["r", "a", "d"]
+          "targetText": "Nase",
+          "targetKeys": [
+            "n",
+            "a",
+            "s",
+            "e"
+          ]
         },
         {
           "id": "l6-e3",
+          "type": "real-word",
+          "instruction": "Tippe das Wort.",
+          "targetText": "Hut",
+          "targetKeys": [
+            "h",
+            "u",
+            "t"
+          ]
+        },
+        {
+          "id": "l6-e4",
+          "type": "pattern",
+          "instruction": "Tippe das Muster.",
+          "targetText": "Rita und Nina",
+          "targetKeys": [
+            "r",
+            "i",
+            "t",
+            "a",
+            "u",
+            "n",
+            "d",
+            "space"
+          ]
+        },
+        {
+          "id": "l6-e5",
+          "type": "pattern",
+          "instruction": "Tippe das Muster.",
+          "targetText": "Nase Hut",
+          "targetKeys": [
+            "n",
+            "a",
+            "s",
+            "e",
+            "space",
+            "h",
+            "u",
+            "t"
+          ]
+        },
+        {
+          "id": "l6-e6",
+          "type": "pattern",
+          "instruction": "Tippe das Muster.",
+          "targetText": "Rita Nina",
+          "targetKeys": [
+            "r",
+            "i",
+            "t",
+            "a",
+            "space",
+            "n"
+          ]
+        },
+        {
+          "id": "l6-e7",
           "type": "real-sentence",
           "instruction": "Tippe den Satz.",
-          "targetText": "Nina liest leise.",
-          "targetKeys": ["n", "i", "a", "l", "e", "s", "t", ".", "space"]
+          "targetText": "Nina hat den Hut",
+          "targetKeys": [
+            "n",
+            "i",
+            "a",
+            "space",
+            "h",
+            "t",
+            "d",
+            "e",
+            "u"
+          ]
         }
       ]
     },
     {
       "id": "lesson-7",
       "order": 7,
-      "title": "U und M",
-      "newKeys": ["u", "m"],
-      "reviewKeys": ["a", "d", "e", "f", "i", "j", "k", "l", "n", "r", "s"],
+      "title": "g G . :",
+      "newKeys": [
+        "g",
+        "G",
+        ".",
+        ":"
+      ],
+      "reviewKeys": [
+        "a",
+        "s",
+        "d",
+        "f",
+        "j",
+        "k",
+        "l",
+        "ö",
+        "e",
+        "n",
+        "r",
+        "i",
+        "t",
+        "h",
+        "c",
+        "u"
+      ],
       "exercises": [
         {
           "id": "l7-e1",
-          "type": "real-word",
-          "instruction": "Tippe das Wort.",
-          "targetText": "mama",
-          "targetKeys": ["m", "a"]
+          "type": "single-key",
+          "instruction": "Drücke G.",
+          "targetText": "g",
+          "targetKeys": [
+            "g"
+          ]
         },
         {
           "id": "l7-e2",
-          "type": "real-word",
-          "instruction": "Tippe das Wort.",
-          "targetText": "murmeln",
-          "targetKeys": ["m", "u", "r", "e", "l", "n"]
+          "type": "single-key",
+          "instruction": "Drücke den Punkt.",
+          "targetText": ".",
+          "targetKeys": [
+            "."
+          ]
         },
         {
           "id": "l7-e3",
+          "type": "single-key",
+          "instruction": "Drücke den Doppelpunkt.",
+          "targetText": ":",
+          "targetKeys": [
+            ":"
+          ]
+        },
+        {
+          "id": "l7-e4",
           "type": "real-sentence",
           "instruction": "Tippe den Satz.",
-          "targetText": "Mama ist da.",
-          "targetKeys": ["m", "a", "i", "s", "t", "d", ".", "space"]
+          "targetText": "Gina geht.",
+          "targetKeys": [
+            "g",
+            "i",
+            "n",
+            "a",
+            "e",
+            "h",
+            "t",
+            "."
+          ]
+        },
+        {
+          "id": "l7-e5",
+          "type": "pattern",
+          "instruction": "Tippe das Muster.",
+          "targetText": "g: g: g:",
+          "targetKeys": [
+            "g",
+            ":",
+            "space"
+          ]
+        },
+        {
+          "id": "l7-e6",
+          "type": "real-sentence",
+          "instruction": "Tippe den Satz.",
+          "targetText": "Gina sagt: hi.",
+          "targetKeys": [
+            "g",
+            "i",
+            "n",
+            "a",
+            "space",
+            "s",
+            "t",
+            ":",
+            "h",
+            "."
+          ]
         }
       ]
     },
     {
       "id": "lesson-8",
       "order": 8,
-      "title": "T und O",
-      "newKeys": ["t", "o"],
-      "reviewKeys": ["a", "d", "e", "f", "i", "j", "k", "l", "m", "n", "r", "s", "u"],
+      "title": "o O m M",
+      "newKeys": [
+        "o",
+        "O",
+        "m",
+        "M"
+      ],
+      "reviewKeys": [
+        "a",
+        "c",
+        "d",
+        "e",
+        "f",
+        "g",
+        "h",
+        "i",
+        "j",
+        "k",
+        "l",
+        "n",
+        "r",
+        "s",
+        "t",
+        "u",
+        "ö",
+        ".",
+        ":"
+      ],
       "exercises": [
         {
           "id": "l8-e1",
-          "type": "real-word",
-          "instruction": "Tippe das Wort.",
-          "targetText": "rot",
-          "targetKeys": ["r", "o", "t"]
+          "type": "single-key",
+          "instruction": "Drücke O.",
+          "targetText": "o",
+          "targetKeys": [
+            "o"
+          ]
         },
         {
           "id": "l8-e2",
-          "type": "real-word",
-          "instruction": "Tippe das Wort.",
-          "targetText": "tomate",
-          "targetKeys": ["t", "o", "m", "a", "e"]
+          "type": "single-key",
+          "instruction": "Drücke M.",
+          "targetText": "m",
+          "targetKeys": [
+            "m"
+          ]
         },
         {
           "id": "l8-e3",
+          "type": "real-word",
+          "instruction": "Tippe das Wort.",
+          "targetText": "Mond",
+          "targetKeys": [
+            "m",
+            "o",
+            "n",
+            "d"
+          ]
+        },
+        {
+          "id": "l8-e4",
           "type": "real-sentence",
           "instruction": "Tippe den Satz.",
-          "targetText": "Der Mond ist rot.",
-          "targetKeys": ["d", "e", "r", "m", "o", "n", "i", "s", "t", ".", "space"]
+          "targetText": "Mona ist im Garten.",
+          "targetKeys": [
+            "m",
+            "o",
+            "n",
+            "a",
+            "i",
+            "s",
+            "t",
+            "g",
+            "r",
+            "e",
+            ".",
+            "space"
+          ]
+        },
+        {
+          "id": "l8-e5",
+          "type": "pattern",
+          "instruction": "Tippe das Muster.",
+          "targetText": "mo mo mo",
+          "targetKeys": [
+            "m",
+            "o",
+            "space"
+          ]
+        },
+        {
+          "id": "l8-e6",
+          "type": "real-word",
+          "instruction": "Tippe das Wort.",
+          "targetText": "Morgen",
+          "targetKeys": [
+            "m",
+            "o",
+            "r",
+            "g",
+            "e",
+            "n"
+          ]
         }
       ]
     },
     {
       "id": "lesson-9",
       "order": 9,
-      "title": "G und H",
-      "newKeys": ["g", "h"],
-      "reviewKeys": ["a", "d", "e", "f", "i", "j", "k", "l", "m", "n", "o", "r", "s", "t", "u"],
+      "title": "b B w W",
+      "newKeys": [
+        "b",
+        "B",
+        "w",
+        "W"
+      ],
+      "reviewKeys": [
+        "a",
+        "c",
+        "d",
+        "e",
+        "f",
+        "g",
+        "h",
+        "i",
+        "j",
+        "k",
+        "l",
+        "m",
+        "n",
+        "o",
+        "r",
+        "s",
+        "t",
+        "u",
+        "ö",
+        ".",
+        ":"
+      ],
       "exercises": [
         {
           "id": "l9-e1",
-          "type": "real-word",
-          "instruction": "Tippe das Wort.",
-          "targetText": "haus",
-          "targetKeys": ["h", "a", "u", "s"]
+          "type": "single-key",
+          "instruction": "Drücke B.",
+          "targetText": "b",
+          "targetKeys": [
+            "b"
+          ]
         },
         {
           "id": "l9-e2",
-          "type": "real-word",
-          "instruction": "Tippe das Wort.",
-          "targetText": "hugo",
-          "targetKeys": ["h", "u", "g", "o"]
+          "type": "single-key",
+          "instruction": "Drücke W.",
+          "targetText": "w",
+          "targetKeys": [
+            "w"
+          ]
         },
         {
           "id": "l9-e3",
+          "type": "real-word",
+          "instruction": "Tippe das Wort.",
+          "targetText": "Brot",
+          "targetKeys": [
+            "b",
+            "r",
+            "o",
+            "t"
+          ]
+        },
+        {
+          "id": "l9-e4",
           "type": "real-sentence",
           "instruction": "Tippe den Satz.",
-          "targetText": "Der Hase ist da.",
-          "targetKeys": ["d", "e", "r", "h", "a", "s", "i", "t", ".", "space"]
+          "targetText": "Ben wohnt im Norden.",
+          "targetKeys": [
+            "b",
+            "e",
+            "n",
+            "w",
+            "o",
+            "h",
+            "t",
+            "i",
+            "m",
+            "r",
+            "d",
+            ".",
+            "space"
+          ]
+        },
+        {
+          "id": "l9-e5",
+          "type": "pattern",
+          "instruction": "Tippe das Muster.",
+          "targetText": "bw bw bw",
+          "targetKeys": [
+            "b",
+            "w",
+            "space"
+          ]
+        },
+        {
+          "id": "l9-e6",
+          "type": "real-word",
+          "instruction": "Tippe das Wort.",
+          "targetText": "Waben",
+          "targetKeys": [
+            "w",
+            "a",
+            "b",
+            "e",
+            "n"
+          ]
         }
       ]
     },
     {
       "id": "lesson-10",
       "order": 10,
-      "title": "P, B und W",
-      "newKeys": ["p", "b", "w"],
-      "reviewKeys": ["a", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "r", "s", "t", "u"],
+      "title": "z Z , ;",
+      "newKeys": [
+        "z",
+        "Z",
+        ",",
+        ";"
+      ],
+      "reviewKeys": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f",
+        "g",
+        "h",
+        "i",
+        "j",
+        "k",
+        "l",
+        "m",
+        "n",
+        "o",
+        "r",
+        "s",
+        "t",
+        "u",
+        "w",
+        "ö",
+        ".",
+        ":"
+      ],
       "exercises": [
         {
           "id": "l10-e1",
-          "type": "real-word",
-          "instruction": "Tippe das Wort.",
-          "targetText": "brot",
-          "targetKeys": ["b", "r", "o", "t"]
+          "type": "single-key",
+          "instruction": "Drücke Z.",
+          "targetText": "z",
+          "targetKeys": [
+            "z"
+          ]
         },
         {
           "id": "l10-e2",
-          "type": "real-word",
-          "instruction": "Tippe das Wort.",
-          "targetText": "papa",
-          "targetKeys": ["p", "a"]
+          "type": "single-key",
+          "instruction": "Drücke das Komma.",
+          "targetText": ",",
+          "targetKeys": [
+            ","
+          ]
         },
         {
           "id": "l10-e3",
+          "type": "single-key",
+          "instruction": "Drücke das Semikolon.",
+          "targetText": ";",
+          "targetKeys": [
+            ";"
+          ]
+        },
+        {
+          "id": "l10-e4",
           "type": "real-sentence",
           "instruction": "Tippe den Satz.",
-          "targetText": "Ben wartet.",
-          "targetKeys": ["b", "e", "n", "w", "a", "r", "t", ".", "space"]
+          "targetText": "Zora, wir warten.",
+          "targetKeys": [
+            "z",
+            "o",
+            "r",
+            "a",
+            ",",
+            "w",
+            "i",
+            "t",
+            "e",
+            "n",
+            ".",
+            "space"
+          ]
+        },
+        {
+          "id": "l10-e5",
+          "type": "pattern",
+          "instruction": "Tippe das Muster.",
+          "targetText": "z, z; z,",
+          "targetKeys": [
+            "z",
+            ",",
+            "space",
+            ";"
+          ]
+        },
+        {
+          "id": "l10-e6",
+          "type": "real-sentence",
+          "instruction": "Tippe den Satz.",
+          "targetText": "Zora sagt; wir warten.",
+          "targetKeys": [
+            "z",
+            "o",
+            "r",
+            "a",
+            "space",
+            "s",
+            "g",
+            "t",
+            ";",
+            "w",
+            "i",
+            "e",
+            "n",
+            "."
+          ]
         }
       ]
     },
     {
       "id": "lesson-11",
       "order": 11,
-      "title": "Z, C und V",
-      "newKeys": ["z", "c", "v"],
-      "reviewKeys": ["a", "b", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "r", "s", "t", "u", "w"],
+      "title": "v V p P",
+      "newKeys": [
+        "v",
+        "V",
+        "p",
+        "P"
+      ],
+      "reviewKeys": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f",
+        "g",
+        "h",
+        "i",
+        "j",
+        "k",
+        "l",
+        "m",
+        "n",
+        "o",
+        "r",
+        "s",
+        "t",
+        "u",
+        "w",
+        "z",
+        "ö",
+        ".",
+        ",",
+        ":",
+        ";"
+      ],
       "exercises": [
         {
           "id": "l11-e1",
-          "type": "real-word",
-          "instruction": "Tippe das Wort.",
-          "targetText": "zebra",
-          "targetKeys": ["z", "e", "b", "r", "a"]
+          "type": "single-key",
+          "instruction": "Drücke V.",
+          "targetText": "v",
+          "targetKeys": [
+            "v"
+          ]
         },
         {
           "id": "l11-e2",
-          "type": "real-word",
-          "instruction": "Tippe das Wort.",
-          "targetText": "vase",
-          "targetKeys": ["v", "a", "s", "e"]
+          "type": "single-key",
+          "instruction": "Drücke P.",
+          "targetText": "p",
+          "targetKeys": [
+            "p"
+          ]
         },
         {
           "id": "l11-e3",
+          "type": "real-word",
+          "instruction": "Tippe das Wort.",
+          "targetText": "Vase",
+          "targetKeys": [
+            "v",
+            "a",
+            "s",
+            "e"
+          ]
+        },
+        {
+          "id": "l11-e4",
           "type": "real-sentence",
           "instruction": "Tippe den Satz.",
-          "targetText": "Cora ist zu Hause.",
-          "targetKeys": ["c", "o", "r", "a", "i", "s", "t", "z", "u", "h", ".", "space"]
+          "targetText": "Vera packt Brot.",
+          "targetKeys": [
+            "v",
+            "e",
+            "r",
+            "a",
+            "p",
+            "c",
+            "k",
+            "t",
+            "b",
+            "o",
+            ".",
+            "space"
+          ]
+        },
+        {
+          "id": "l11-e5",
+          "type": "pattern",
+          "instruction": "Tippe das Muster.",
+          "targetText": "vp vp vp",
+          "targetKeys": [
+            "v",
+            "p",
+            "space"
+          ]
+        },
+        {
+          "id": "l11-e6",
+          "type": "real-word",
+          "instruction": "Tippe das Wort.",
+          "targetText": "Paprika",
+          "targetKeys": [
+            "p",
+            "a",
+            "r",
+            "i",
+            "k"
+          ]
         }
       ]
     },
     {
       "id": "lesson-12",
       "order": 12,
-      "title": "X, Y und Q",
-      "newKeys": ["x", "y", "q"],
-      "reviewKeys": ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "r", "s", "t", "u", "v", "w", "z"],
+      "title": "ü Ü ä Ä",
+      "newKeys": [
+        "ü",
+        "Ü",
+        "ä",
+        "Ä"
+      ],
+      "reviewKeys": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f",
+        "g",
+        "h",
+        "i",
+        "j",
+        "k",
+        "l",
+        "m",
+        "n",
+        "o",
+        "p",
+        "r",
+        "s",
+        "t",
+        "u",
+        "v",
+        "w",
+        "z",
+        "ö",
+        ".",
+        ",",
+        ":",
+        ";"
+      ],
       "exercises": [
         {
           "id": "l12-e1",
-          "type": "real-word",
-          "instruction": "Tippe das Wort.",
-          "targetText": "taxi",
-          "targetKeys": ["t", "a", "x", "i"]
+          "type": "single-key",
+          "instruction": "Drücke Ü.",
+          "targetText": "Ü",
+          "targetKeys": [
+            "ü"
+          ]
         },
         {
           "id": "l12-e2",
-          "type": "real-word",
-          "instruction": "Tippe das Wort.",
-          "targetText": "yoga",
-          "targetKeys": ["y", "o", "g", "a"]
+          "type": "single-key",
+          "instruction": "Drücke Ä.",
+          "targetText": "Ä",
+          "targetKeys": [
+            "ä"
+          ]
         },
         {
           "id": "l12-e3",
           "type": "real-word",
           "instruction": "Tippe das Wort.",
-          "targetText": "quark",
-          "targetKeys": ["q", "u", "a", "r", "k"]
+          "targetText": "Müde",
+          "targetKeys": [
+            "m",
+            "ü",
+            "d",
+            "e"
+          ]
+        },
+        {
+          "id": "l12-e4",
+          "type": "real-word",
+          "instruction": "Tippe das Wort.",
+          "targetText": "Bär",
+          "targetKeys": [
+            "b",
+            "ä",
+            "r"
+          ]
+        },
+        {
+          "id": "l12-e5",
+          "type": "pattern",
+          "instruction": "Tippe das Muster.",
+          "targetText": "ü ä ü ä",
+          "targetKeys": [
+            "ü",
+            "space",
+            "ä"
+          ]
+        },
+        {
+          "id": "l12-e6",
+          "type": "real-word",
+          "instruction": "Tippe das Wort.",
+          "targetText": "Bäume",
+          "targetKeys": [
+            "b",
+            "ä",
+            "u",
+            "m",
+            "e"
+          ]
         }
       ]
     },
     {
       "id": "lesson-13",
       "order": 13,
-      "title": "Ä, Ö und Ü",
-      "newKeys": ["ä", "ö", "ü"],
-      "reviewKeys": ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"],
+      "title": "? q Q",
+      "newKeys": [
+        "?",
+        "q",
+        "Q"
+      ],
+      "reviewKeys": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f",
+        "g",
+        "h",
+        "i",
+        "j",
+        "k",
+        "l",
+        "m",
+        "n",
+        "o",
+        "p",
+        "r",
+        "s",
+        "t",
+        "u",
+        "v",
+        "w",
+        "z",
+        "ä",
+        "ö",
+        "ü",
+        ".",
+        ",",
+        ":",
+        ";"
+      ],
       "exercises": [
         {
           "id": "l13-e1",
-          "type": "real-word",
-          "instruction": "Tippe das Wort.",
-          "targetText": "müde",
-          "targetKeys": ["m", "ü", "d", "e"]
+          "type": "single-key",
+          "instruction": "Drücke das Fragezeichen.",
+          "targetText": "?",
+          "targetKeys": [
+            "?"
+          ]
         },
         {
           "id": "l13-e2",
-          "type": "real-word",
-          "instruction": "Tippe das Wort.",
-          "targetText": "möwe",
-          "targetKeys": ["m", "ö", "w", "e"]
+          "type": "single-key",
+          "instruction": "Drücke Q.",
+          "targetText": "q",
+          "targetKeys": [
+            "q"
+          ]
         },
         {
           "id": "l13-e3",
           "type": "real-word",
           "instruction": "Tippe das Wort.",
-          "targetText": "fähre",
-          "targetKeys": ["f", "ä", "h", "r", "e"]
+          "targetText": "Quelle",
+          "targetKeys": [
+            "q",
+            "u",
+            "e",
+            "l"
+          ]
+        },
+        {
+          "id": "l13-e4",
+          "type": "pattern",
+          "instruction": "Tippe das Muster.",
+          "targetText": "Q q ?",
+          "targetKeys": [
+            "q",
+            "?",
+            "space"
+          ]
+        },
+        {
+          "id": "l13-e5",
+          "type": "pattern",
+          "instruction": "Tippe das Muster.",
+          "targetText": "q q ? q",
+          "targetKeys": [
+            "q",
+            "space",
+            "?"
+          ]
+        },
+        {
+          "id": "l13-e6",
+          "type": "real-sentence",
+          "instruction": "Tippe den Satz.",
+          "targetText": "Quelle, ok?",
+          "targetKeys": [
+            "q",
+            "u",
+            "e",
+            "l",
+            ",",
+            "space",
+            "o",
+            "k",
+            "?"
+          ]
         }
       ]
     },
     {
       "id": "lesson-14",
       "order": 14,
-      "title": "Punkt und Komma",
-      "newKeys": [".", ","],
-      "reviewKeys": ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "ä", "ö", "ü"],
+      "title": "y Y x X - /",
+      "newKeys": [
+        "y",
+        "Y",
+        "x",
+        "X",
+        "-",
+        "/"
+      ],
+      "reviewKeys": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f",
+        "g",
+        "h",
+        "i",
+        "j",
+        "k",
+        "l",
+        "m",
+        "n",
+        "o",
+        "p",
+        "q",
+        "r",
+        "s",
+        "t",
+        "u",
+        "v",
+        "w",
+        "z",
+        "ä",
+        "ö",
+        "ü",
+        ".",
+        ",",
+        ":",
+        ";",
+        "?"
+      ],
       "exercises": [
         {
           "id": "l14-e1",
           "type": "single-key",
-          "instruction": "Drücke den Punkt.",
-          "targetText": ".",
-          "targetKeys": ["."]
+          "instruction": "Drücke Y.",
+          "targetText": "y",
+          "targetKeys": [
+            "y"
+          ]
         },
         {
           "id": "l14-e2",
           "type": "single-key",
-          "instruction": "Drücke das Komma.",
-          "targetText": ",",
-          "targetKeys": [","]
+          "instruction": "Drücke X.",
+          "targetText": "x",
+          "targetKeys": [
+            "x"
+          ]
         },
         {
           "id": "l14-e3",
-          "type": "real-sentence",
-          "instruction": "Tippe den Satz.",
-          "targetText": "Nina, komm.",
-          "targetKeys": ["n", "i", "a", "k", "o", "m", ",", ".", "space"]
+          "type": "single-key",
+          "instruction": "Drücke den Bindestrich.",
+          "targetText": "-",
+          "targetKeys": [
+            "-"
+          ]
+        },
+        {
+          "id": "l14-e4",
+          "type": "pattern",
+          "instruction": "Tippe das Muster.",
+          "targetText": "x/y y/x",
+          "targetKeys": [
+            "x",
+            "y",
+            "/",
+            "space"
+          ]
+        },
+        {
+          "id": "l14-e5",
+          "type": "real-word",
+          "instruction": "Tippe das Wort.",
+          "targetText": "Yoga-Kurs",
+          "targetKeys": [
+            "y",
+            "o",
+            "g",
+            "a",
+            "-",
+            "k",
+            "u",
+            "r",
+            "s"
+          ]
+        },
+        {
+          "id": "l14-e6",
+          "type": "pattern",
+          "instruction": "Tippe das Muster.",
+          "targetText": "x-y / y-x",
+          "targetKeys": [
+            "x",
+            "-",
+            "y",
+            "space",
+            "/"
+          ]
         }
       ]
     },
     {
       "id": "lesson-15",
       "order": 15,
-      "title": "Ausrufezeichen und Fragezeichen",
-      "newKeys": ["!", "?"],
-      "reviewKeys": ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "ä", "ö", "ü", ".", ","],
+      "title": "! \" ( ) _ '",
+      "newKeys": [
+        "!",
+        "\"",
+        "(",
+        ")",
+        "_",
+        "'"
+      ],
+      "reviewKeys": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f",
+        "g",
+        "h",
+        "i",
+        "j",
+        "k",
+        "l",
+        "m",
+        "n",
+        "o",
+        "p",
+        "q",
+        "r",
+        "s",
+        "t",
+        "u",
+        "v",
+        "w",
+        "x",
+        "y",
+        "z",
+        "ä",
+        "ö",
+        "ü",
+        ".",
+        ",",
+        ":",
+        ";",
+        "?",
+        "-",
+        "/"
+      ],
       "exercises": [
         {
           "id": "l15-e1",
           "type": "single-key",
           "instruction": "Drücke das Ausrufezeichen.",
           "targetText": "!",
-          "targetKeys": ["!"]
+          "targetKeys": [
+            "!"
+          ]
         },
         {
           "id": "l15-e2",
           "type": "single-key",
-          "instruction": "Drücke das Fragezeichen.",
-          "targetText": "?",
-          "targetKeys": ["?"]
+          "instruction": "Drücke das Anführungszeichen.",
+          "targetText": "\"",
+          "targetKeys": [
+            "\""
+          ]
         },
         {
           "id": "l15-e3",
-          "type": "real-sentence",
-          "instruction": "Tippe den Satz.",
-          "targetText": "Ist Nina da?",
-          "targetKeys": ["i", "s", "t", "n", "a", "d", "?", "space"]
+          "type": "pattern",
+          "instruction": "Tippe das Muster.",
+          "targetText": "( ) ( )",
+          "targetKeys": [
+            "(",
+            ")",
+            "space"
+          ]
         },
         {
           "id": "l15-e4",
-          "type": "real-sentence",
-          "instruction": "Tippe den Satz.",
-          "targetText": "Hallo, Nina!",
-          "targetKeys": ["h", "a", "l", "o", "n", "i", ",", "!", "space"]
+          "type": "pattern",
+          "instruction": "Tippe das Muster.",
+          "targetText": "_ _ ' '",
+          "targetKeys": [
+            "_",
+            "'",
+            "space"
+          ]
+        },
+        {
+          "id": "l15-e5",
+          "type": "pattern",
+          "instruction": "Tippe das Muster.",
+          "targetText": "\"Hallo!\"",
+          "targetKeys": [
+            "\"",
+            "h",
+            "a",
+            "l",
+            "o",
+            "!"
+          ]
+        },
+        {
+          "id": "l15-e6",
+          "type": "pattern",
+          "instruction": "Tippe das Muster.",
+          "targetText": "\"Ja!\" \"Nein!\"",
+          "targetKeys": [
+            "\"",
+            "j",
+            "a",
+            "!",
+            "space",
+            "n",
+            "e",
+            "i"
+          ]
         }
       ]
     },
     {
       "id": "lesson-16",
       "order": 16,
-      "title": "Satzpraxis 1",
-      "newKeys": [],
-      "reviewKeys": ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "ä", "ö", "ü", "space", ".", ",", "!", "?"],
+      "title": "Ziffern",
+      "newKeys": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "reviewKeys": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f",
+        "g",
+        "h",
+        "i",
+        "j",
+        "k",
+        "l",
+        "m",
+        "n",
+        "o",
+        "p",
+        "q",
+        "r",
+        "s",
+        "t",
+        "u",
+        "v",
+        "w",
+        "x",
+        "y",
+        "z",
+        "ä",
+        "ö",
+        "ü",
+        ".",
+        ",",
+        ":",
+        ";",
+        "?",
+        "!",
+        "\"",
+        "(",
+        ")",
+        "_",
+        "'",
+        "-",
+        "/"
+      ],
       "exercises": [
         {
           "id": "l16-e1",
-          "type": "real-sentence",
-          "instruction": "Tippe den Satz.",
-          "targetText": "Nina malt ein Haus.",
-          "targetKeys": ["n", "i", "a", "m", "l", "t", "e", "h", "u", "s", ".", "space"]
+          "type": "pattern",
+          "instruction": "Tippe die Ziffernreihe.",
+          "targetText": "12345",
+          "targetKeys": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ]
         },
         {
           "id": "l16-e2",
-          "type": "real-sentence",
-          "instruction": "Tippe den Satz.",
-          "targetText": "Tom spielt im Garten.",
-          "targetKeys": ["t", "o", "m", "s", "p", "i", "e", "l", "g", "a", "r", "n", ".", "space"]
+          "type": "pattern",
+          "instruction": "Tippe die Ziffernreihe.",
+          "targetText": "67890",
+          "targetKeys": [
+            "6",
+            "7",
+            "8",
+            "9",
+            "0"
+          ]
         },
         {
           "id": "l16-e3",
-          "type": "real-sentence",
-          "instruction": "Tippe den Satz.",
-          "targetText": "Heute ist es ruhig.",
-          "targetKeys": ["h", "e", "u", "t", "i", "s", "r", "g", ".", "space"]
+          "type": "pattern",
+          "instruction": "Tippe das Muster.",
+          "targetText": "2 4 6 8 0",
+          "targetKeys": [
+            "2",
+            "4",
+            "6",
+            "8",
+            "0",
+            "space"
+          ]
         },
         {
           "id": "l16-e4",
-          "type": "real-sentence",
-          "instruction": "Tippe den Satz.",
-          "targetText": "Mia liest, Leo hört zu.",
-          "targetKeys": ["m", "i", "a", "l", "e", "s", "t", ",", "o", "h", "r", "z", "u", ".", "space"]
+          "type": "pattern",
+          "instruction": "Tippe das Muster.",
+          "targetText": "9 7 5 3 1",
+          "targetKeys": [
+            "9",
+            "7",
+            "5",
+            "3",
+            "1",
+            "space"
+          ]
         },
         {
           "id": "l16-e5",
-          "type": "real-sentence",
-          "instruction": "Tippe den Satz.",
-          "targetText": "Der Weg ist kurz.",
-          "targetKeys": ["d", "e", "r", "w", "g", "i", "s", "t", "k", "u", "z", ".", "space"]
+          "type": "pattern",
+          "instruction": "Tippe das Muster.",
+          "targetText": "0 1 2 3 4 5 6 7 8 9",
+          "targetKeys": [
+            "0",
+            "space",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9"
+          ]
+        },
+        {
+          "id": "l16-e6",
+          "type": "pattern",
+          "instruction": "Tippe das Muster.",
+          "targetText": "11 22 33 44",
+          "targetKeys": [
+            "1",
+            "space",
+            "2",
+            "3",
+            "4"
+          ]
         }
       ]
     },
     {
       "id": "lesson-17",
       "order": 17,
-      "title": "Satzpraxis 2",
-      "newKeys": [],
-      "reviewKeys": ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "ä", "ö", "ü", "space", ".", ",", "!", "?"],
+      "title": "@ % # * < > = & §",
+      "newKeys": [
+        "@",
+        "%",
+        "#",
+        "*",
+        "<",
+        ">",
+        "=",
+        "&",
+        "§"
+      ],
+      "reviewKeys": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "!",
+        "\"",
+        "(",
+        ")",
+        "_",
+        "'",
+        "-",
+        "/",
+        ".",
+        ",",
+        ":",
+        ";",
+        "?"
+      ],
       "exercises": [
         {
           "id": "l17-e1",
-          "type": "real-sentence",
-          "instruction": "Tippe den Satz.",
-          "targetText": "Am Morgen singt ein Vogel.",
-          "targetKeys": ["a", "m", "o", "r", "g", "e", "n", "s", "i", "t", "v", "l", ".", "space"]
+          "type": "single-key",
+          "instruction": "Drücke das At-Zeichen.",
+          "targetText": "@",
+          "targetKeys": [
+            "@"
+          ]
         },
         {
           "id": "l17-e2",
-          "type": "real-sentence",
-          "instruction": "Tippe den Satz.",
-          "targetText": "Das Wasser ist kühl, aber klar.",
-          "targetKeys": ["d", "a", "s", "w", "e", "r", "i", "t", "k", "ü", "h", "l", ",", "b", ".", "space"]
+          "type": "pattern",
+          "instruction": "Tippe das Muster.",
+          "targetText": "% # *",
+          "targetKeys": [
+            "%",
+            "#",
+            "*",
+            "space"
+          ]
         },
         {
           "id": "l17-e3",
-          "type": "real-sentence",
-          "instruction": "Tippe den Satz.",
-          "targetText": "Kommt ihr heute mit?",
-          "targetKeys": ["k", "o", "m", "t", "i", "h", "r", "e", "u", "?", "space"]
+          "type": "pattern",
+          "instruction": "Tippe das Muster.",
+          "targetText": "< > =",
+          "targetKeys": [
+            "<",
+            ">",
+            "=",
+            "space"
+          ]
         },
         {
           "id": "l17-e4",
-          "type": "real-sentence",
-          "instruction": "Tippe den Satz.",
-          "targetText": "Ja, wir gehen zum See!",
-          "targetKeys": ["j", "a", ",", "w", "i", "r", "g", "e", "h", "n", "z", "u", "m", "s", "!", "space"]
+          "type": "pattern",
+          "instruction": "Tippe das Muster.",
+          "targetText": "& § @",
+          "targetKeys": [
+            "&",
+            "§",
+            "@",
+            "space"
+          ]
         },
         {
           "id": "l17-e5",
-          "type": "real-sentence",
-          "instruction": "Tippe den Satz.",
-          "targetText": "Später üben wir noch einmal.",
-          "targetKeys": ["s", "p", "ä", "t", "e", "r", "ü", "b", "n", "w", "i", "o", "c", "h", "m", "l", ".", "space"]
+          "type": "pattern",
+          "instruction": "Tippe das Muster.",
+          "targetText": "# % *",
+          "targetKeys": [
+            "#",
+            "%",
+            "*",
+            "space"
+          ]
+        },
+        {
+          "id": "l17-e6",
+          "type": "pattern",
+          "instruction": "Tippe das Muster.",
+          "targetText": "@ # % & § =",
+          "targetKeys": [
+            "@",
+            "space",
+            "#",
+            "%",
+            "&",
+            "§",
+            "="
+          ]
         }
       ]
     },
     {
       "id": "lesson-18",
       "order": 18,
-      "title": "Satzpraxis 3",
+      "title": "Alle Zeichen",
       "newKeys": [],
-      "reviewKeys": ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "ä", "ö", "ü", "space", ".", ",", "!", "?"],
+      "reviewKeys": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f",
+        "g",
+        "h",
+        "i",
+        "j",
+        "k",
+        "l",
+        "m",
+        "n",
+        "o",
+        "p",
+        "q",
+        "r",
+        "s",
+        "t",
+        "u",
+        "v",
+        "w",
+        "x",
+        "y",
+        "z",
+        "ä",
+        "ö",
+        "ü",
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L",
+        "M",
+        "N",
+        "O",
+        "P",
+        "Q",
+        "R",
+        "S",
+        "T",
+        "U",
+        "V",
+        "W",
+        "X",
+        "Y",
+        "Z",
+        "Ä",
+        "Ö",
+        "Ü",
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        ".",
+        ",",
+        ":",
+        ";",
+        "?",
+        "!",
+        "\"",
+        "(",
+        ")",
+        "_",
+        "'",
+        "-",
+        "/",
+        "@",
+        "%",
+        "#",
+        "*",
+        "<",
+        ">",
+        "=",
+        "&",
+        "§",
+        "~",
+        "\\",
+        "|",
+        "space"
+      ],
       "exercises": [
         {
           "id": "l18-e1",
-          "type": "real-sentence",
-          "instruction": "Tippe den Satz.",
-          "targetText": "Heute übt die ganze Gruppe zusammen.",
-          "targetKeys": ["h", "e", "u", "t", "ü", "b", "d", "i", "g", "a", "n", "z", "r", "p", "s", "m", ".", "space"]
+          "type": "pattern",
+          "instruction": "Tippe das Muster.",
+          "targetText": "A1 B2 C3",
+          "targetKeys": [
+            "a",
+            "b",
+            "c",
+            "1",
+            "2",
+            "3",
+            "space"
+          ]
         },
         {
           "id": "l18-e2",
-          "type": "real-sentence",
-          "instruction": "Tippe den Satz.",
-          "targetText": "Mögt ihr lieber Musik oder Stille?",
-          "targetKeys": ["m", "ö", "g", "t", "i", "h", "r", "l", "e", "b", "u", "s", "k", "o", "d", "?", "space"]
+          "type": "pattern",
+          "instruction": "Tippe das Muster.",
+          "targetText": "Ja/nein - klar.",
+          "targetKeys": [
+            "j",
+            "a",
+            "/",
+            "n",
+            "e",
+            "i",
+            "-",
+            "k",
+            "l",
+            "r",
+            ".",
+            "space"
+          ]
         },
         {
           "id": "l18-e3",
-          "type": "real-sentence",
-          "instruction": "Tippe den Satz.",
-          "targetText": "Der Regen ist leise, und die Luft ist kühl.",
-          "targetKeys": ["d", "e", "r", "r", "g", "n", "i", "s", "t", "l", ",", "u", "h", "f", "k", "ü", ".", "space"]
+          "type": "pattern",
+          "instruction": "Tippe das Muster.",
+          "targetText": "(Q) @ 9",
+          "targetKeys": [
+            "(",
+            "q",
+            ")",
+            "@",
+            "9",
+            "space"
+          ]
         },
         {
           "id": "l18-e4",
-          "type": "real-sentence",
-          "instruction": "Tippe den Satz.",
-          "targetText": "Im Garten wächst eine rote Tomate.",
-          "targetKeys": ["i", "m", "g", "a", "r", "t", "e", "n", "w", "ä", "c", "h", "s", "o", ".", "space"]
+          "type": "pattern",
+          "instruction": "Tippe das Muster.",
+          "targetText": "< > = &",
+          "targetKeys": [
+            "<",
+            ">",
+            "=",
+            "&",
+            "space"
+          ]
         },
         {
           "id": "l18-e5",
+          "type": "pattern",
+          "instruction": "Tippe das Muster.",
+          "targetText": "Mia-2, Ben-3.",
+          "targetKeys": [
+            "m",
+            "i",
+            "a",
+            "-",
+            "2",
+            ",",
+            "space",
+            "b",
+            "e",
+            "n",
+            "3",
+            "."
+          ]
+        },
+        {
+          "id": "l18-e6",
+          "type": "pattern",
+          "instruction": "Tippe das Muster.",
+          "targetText": "@A = 1",
+          "targetKeys": [
+            "@",
+            "a",
+            "space",
+            "=",
+            "1"
+          ]
+        },
+        {
+          "id": "l18-e7",
           "type": "real-sentence",
           "instruction": "Tippe den Satz.",
-          "targetText": "Super, das war sehr gut!",
-          "targetKeys": ["s", "u", "p", "e", "r", ",", "d", "a", "w", "h", "g", "t", "!", "space"]
+          "targetText": "Heute ist Übungstag, alles klappt.",
+          "targetKeys": [
+            "h",
+            "e",
+            "u",
+            "t",
+            "space",
+            "i",
+            "s",
+            "ü",
+            "b",
+            "n",
+            "g",
+            "a",
+            ",",
+            "l",
+            "k",
+            "p",
+            "."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lesson-19",
+      "order": 19,
+      "title": "Sätze",
+      "newKeys": [],
+      "reviewKeys": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f",
+        "g",
+        "h",
+        "i",
+        "j",
+        "k",
+        "l",
+        "m",
+        "n",
+        "o",
+        "p",
+        "q",
+        "r",
+        "s",
+        "t",
+        "u",
+        "v",
+        "w",
+        "x",
+        "y",
+        "z",
+        "ä",
+        "ö",
+        "ü",
+        ".",
+        ",",
+        ":",
+        ";",
+        "?",
+        "!",
+        "-",
+        "space"
+      ],
+      "exercises": [
+        {
+          "id": "l19-e1",
+          "type": "real-sentence",
+          "instruction": "Tippe den Satz.",
+          "targetText": "Heute übt die Gruppe ruhig.",
+          "targetKeys": [
+            "h",
+            "e",
+            "u",
+            "t",
+            "b",
+            "d",
+            "i",
+            "g",
+            "r",
+            "p",
+            "o",
+            "s",
+            ".",
+            "space"
+          ]
+        },
+        {
+          "id": "l19-e2",
+          "type": "real-sentence",
+          "instruction": "Tippe den Satz.",
+          "targetText": "Mia liest ein Buch, Ben hört zu.",
+          "targetKeys": [
+            "m",
+            "i",
+            "a",
+            "l",
+            "e",
+            "s",
+            "t",
+            "n",
+            "b",
+            "u",
+            "c",
+            "h",
+            ",",
+            "o",
+            "r",
+            "z",
+            ".",
+            "space"
+          ]
+        },
+        {
+          "id": "l19-e3",
+          "type": "real-sentence",
+          "instruction": "Tippe den Satz.",
+          "targetText": "Im Garten ist es still und warm.",
+          "targetKeys": [
+            "i",
+            "m",
+            "g",
+            "a",
+            "r",
+            "t",
+            "e",
+            "n",
+            "s",
+            "l",
+            "u",
+            "d",
+            "w",
+            ".",
+            "space"
+          ]
+        },
+        {
+          "id": "l19-e4",
+          "type": "real-sentence",
+          "instruction": "Tippe den Satz.",
+          "targetText": "Vera fragt: Kommt ihr später?",
+          "targetKeys": [
+            "v",
+            "e",
+            "r",
+            "a",
+            "f",
+            "g",
+            "t",
+            ":",
+            "k",
+            "o",
+            "m",
+            "i",
+            "u",
+            "s",
+            "p",
+            "?",
+            "space"
+          ]
+        },
+        {
+          "id": "l19-e5",
+          "type": "real-sentence",
+          "instruction": "Tippe den Satz.",
+          "targetText": "Ja, wir machen weiter!",
+          "targetKeys": [
+            "j",
+            "a",
+            ",",
+            "w",
+            "i",
+            "r",
+            "m",
+            "c",
+            "h",
+            "e",
+            "t",
+            "!",
+            "space"
+          ]
+        },
+        {
+          "id": "l19-e6",
+          "type": "real-sentence",
+          "instruction": "Tippe den Satz.",
+          "targetText": "Die Klasse tippt leise und sicher.",
+          "targetKeys": [
+            "d",
+            "i",
+            "e",
+            "space",
+            "k",
+            "l",
+            "a",
+            "s",
+            "t",
+            "p",
+            "u",
+            "n",
+            "c",
+            "h",
+            "r",
+            "."
+          ]
+        },
+        {
+          "id": "l19-e7",
+          "type": "real-sentence",
+          "instruction": "Tippe den Satz.",
+          "targetText": "Am Ende sagen alle: Das passt.",
+          "targetKeys": [
+            "a",
+            "m",
+            "space",
+            "e",
+            "n",
+            "d",
+            "s",
+            "g",
+            "l",
+            ":",
+            "p",
+            "t",
+            "."
+          ]
         }
       ]
     }

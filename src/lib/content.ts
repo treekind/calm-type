@@ -8,10 +8,38 @@ const uiData = uiRaw as UiText;
 
 const REQUIRED_CHARSET = new Set([
   "space",
+  "0",
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "6",
+  "7",
+  "8",
+  "9",
   ".",
   ",",
+  ":",
+  ";",
   "!",
   "?",
+  "-",
+  "/",
+  '"',
+  "(",
+  ")",
+  "_",
+  "'",
+  "@",
+  "%",
+  "#",
+  "*",
+  "<",
+  ">",
+  "=",
+  "&",
+  "§",
   "a",
   "b",
   "c",
@@ -49,12 +77,6 @@ function assertTargetTextRules(data: LessonsFile): void {
   for (const lesson of data.lessons) {
     for (const exercise of lesson.exercises) {
       for (const char of exercise.targetText) {
-        if (/\d/u.test(char)) {
-          throw new Error(
-            `Digits are not allowed in target text (${lesson.id}/${exercise.id}).`,
-          );
-        }
-
         const normalized = normalizeTargetChar(char);
         if (normalized) {
           seen.add(normalized);

@@ -74,11 +74,56 @@ describe('KeyboardQwertz', () => {
     expect(diaeresisKey).toBeInTheDocument();
     expect(diaeresisKey).toHaveClass('border-[var(--accent)]');
 
+    const shiftForExclamation = screen.getAllByText('Shift');
+    expect(shiftForExclamation[0]).toHaveClass('border-[var(--accent)]');
+    expect(shiftForExclamation[1]).not.toHaveClass('border-[var(--accent)]');
+
     rerender(<KeyboardQwertz targetKey="?" showHints={true} showFingers={false} />);
 
     const apostropheLabel = screen.getByText("'");
     const apostropheKey = apostropheLabel.closest('div');
     expect(apostropheKey).toBeInTheDocument();
     expect(apostropheKey).toHaveClass('border-[var(--accent)]');
+
+    const shiftForQuestion = screen.getAllByText('Shift');
+    expect(shiftForQuestion[0]).toHaveClass('border-[var(--accent)]');
+    expect(shiftForQuestion[1]).not.toHaveClass('border-[var(--accent)]');
+  });
+
+  it('shows recommended shift side for uppercase letters', () => {
+    const { rerender } = render(
+      <KeyboardQwertz targetKey="A" showHints={true} showFingers={false} />,
+    );
+
+    let shiftKeys = screen.getAllByText('Shift');
+    expect(shiftKeys[0]).not.toHaveClass('border-[var(--accent)]');
+    expect(shiftKeys[1]).toHaveClass('border-[var(--accent)]');
+
+    rerender(<KeyboardQwertz targetKey="L" showHints={true} showFingers={false} />);
+    shiftKeys = screen.getAllByText('Shift');
+    expect(shiftKeys[0]).toHaveClass('border-[var(--accent)]');
+    expect(shiftKeys[1]).not.toHaveClass('border-[var(--accent)]');
+
+    rerender(<KeyboardQwertz targetKey="Ä" showHints={true} showFingers={false} />);
+    const diaeresisLabel = screen.getByText('¨');
+    const diaeresisKey = diaeresisLabel.closest('div');
+    expect(diaeresisKey).toHaveClass('border-[var(--accent)]');
+
+    const aLabel = screen.getByText('a');
+    const aKey = aLabel.closest('div');
+    expect(aKey).toHaveClass('border-[var(--accent)]');
+
+    shiftKeys = screen.getAllByText('Shift');
+    expect(shiftKeys[0]).not.toHaveClass('border-[var(--accent)]');
+    expect(shiftKeys[1]).toHaveClass('border-[var(--accent)]');
+  });
+
+  it('shows alt layer labels used in lessons', () => {
+    render(<KeyboardQwertz targetKey="#" showHints={true} showFingers={false} />);
+
+    expect(screen.getByText('@')).toBeInTheDocument();
+    expect(screen.getByText('#')).toBeInTheDocument();
+    expect(screen.getByText('<')).toBeInTheDocument();
+    expect(screen.getByText('>')).toBeInTheDocument();
   });
 });
