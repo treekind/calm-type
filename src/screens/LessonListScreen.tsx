@@ -34,12 +34,12 @@ export default function LessonListScreen({
               className="grid gap-3 md:grid-cols-[1fr_auto] md:items-center"
             >
               <div>
-                <p className="text-sm text-[var(--ink-soft)]">
+                <p className="text-sm text-(--ink-soft)">
                   {format(ui.lessonList.lessonLabel, { order: lesson.order })}
                 </p>
                 <h3 className="text-xl">{lesson.title}</h3>
                 {isCompleted ? (
-                  <p className="text-sm text-[var(--ink-soft)]">
+                  <p className="text-sm text-(--ink-soft)">
                     {ui.lessonList.completed}
                   </p>
                 ) : null}

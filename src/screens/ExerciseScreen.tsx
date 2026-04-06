@@ -36,7 +36,7 @@ export default function ExerciseScreen({
   return (
     <div className="grid gap-4">
       <Panel tone="soft" className="grid gap-3">
-        <div className="flex flex-wrap items-center justify-between gap-2 text-sm text-[var(--ink-soft)]">
+        <div className="flex flex-wrap items-center justify-between gap-2 text-sm text-(--ink-soft)">
           <span>{lesson.title}</span>
           <span>
             {ui.exercise.progress}: {exerciseIndex + 1}/
@@ -48,14 +48,14 @@ export default function ExerciseScreen({
       </Panel>
 
       <Panel className="grid gap-2">
-        <p className="text-sm text-[var(--ink-soft)]">
+        <p className="text-sm text-(--ink-soft)">
           {ui.exercise.keyTarget}:{" "}
-          <span className="font-medium text-[var(--ink)]">
+          <span className="font-medium text-(--ink)">
             {targetKey === "space" ? "␣" : targetKey}
           </span>
         </p>
         {hintMessage ? (
-          <p className="text-sm text-[var(--ink-soft)]">{hintMessage}</p>
+          <p className="text-sm text-(--ink-soft)">{hintMessage}</p>
         ) : null}
         <KeyboardQwertz
           targetKey={targetKey}

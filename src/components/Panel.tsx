@@ -5,9 +5,9 @@ interface PanelProps extends HTMLAttributes<HTMLDivElement> {
 }
 
 const toneClass: Record<NonNullable<PanelProps["tone"]>, string> = {
-  default: "border-[var(--line)] bg-[var(--panel)]",
-  soft: "border-[var(--line)] bg-[var(--panel-soft)]",
-  info: "border-[var(--line)] bg-[var(--accent-soft)]",
+  default: "border-(--line) bg-(--panel)",
+  soft: "border-(--line) bg-(--panel-soft)",
+  info: "border-(--line) bg-(--accent-soft)",
 };
 
 export default function Panel({

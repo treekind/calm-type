@@ -18,7 +18,7 @@ interface ToggleRowProps {
 function ToggleRow({ label, checked, onToggle }: ToggleRowProps) {
   return (
     <button
-      className="grid w-full grid-cols-[1fr_auto] items-center rounded-xl border border-[var(--line)] bg-[var(--bg-soft)] px-4 py-3 text-left hover:bg-[var(--panel)]"
+      className="grid w-full grid-cols-[1fr_auto] items-center rounded-xl border border-(--line) bg-(--bg-soft) px-4 py-3 text-left hover:bg-(--panel)"
       onClick={onToggle}
     >
       <span className="text-left text-lg">{label}</span>
@@ -26,13 +26,13 @@ function ToggleRow({ label, checked, onToggle }: ToggleRowProps) {
         className={[
           "h-6 w-11 rounded-full border p-0.5 transition-colors cursor-pointer",
           checked
-            ? "border-[var(--accent)] bg-[var(--accent-soft)]"
-            : "border-[var(--line)] bg-[var(--panel)]",
+            ? "border-(--accent) bg-(--accent-soft)"
+            : "border-(--line) bg-(--panel)",
         ].join(" ")}
       >
         <span
           className={[
-            "block h-[18px] w-[18px] rounded-full bg-[var(--ink)] transition-transform cursor-pointer",
+            "block h-[18px] w-[18px] rounded-full bg-(--ink) transition-transform cursor-pointer",
             checked ? "translate-x-[18px]" : "translate-x-0",
           ].join(" ")}
         />
@@ -78,8 +78,8 @@ export default function SettingsScreen({
             className={[
               "rounded-xl border px-3 py-2 text-left cursor-pointer",
               settings.inputMode === "ignore"
-                ? "border-[var(--accent)] bg-[var(--accent-soft)]"
-                : "border-[var(--line)] bg-[var(--panel)]",
+                ? "border-(--accent) bg-(--accent-soft)"
+                : "border-(--line) bg-(--panel)",
             ].join(" ")}
             onClick={() => onChange({ inputMode: "ignore" })}
             aria-pressed={settings.inputMode === "ignore"}
@@ -91,8 +91,8 @@ export default function SettingsScreen({
             className={[
               "rounded-xl border px-3 py-2 text-left cursor-pointer",
               settings.inputMode === "gentle-hint"
-                ? "border-[var(--accent)] bg-[var(--accent-soft)]"
-                : "border-[var(--line)] bg-[var(--panel)]",
+                ? "border-(--accent) bg-(--accent-soft)"
+                : "border-(--line) bg-(--panel)",
             ].join(" ")}
             onClick={() => onChange({ inputMode: "gentle-hint" })}
             aria-pressed={settings.inputMode === "gentle-hint"}

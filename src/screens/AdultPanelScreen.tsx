@@ -26,7 +26,7 @@ export default function AdultPanelScreen({
       </Button>
 
       <Panel tone="soft">
-        <p className="text-[var(--ink-soft)]">{ui.adult.resetDescription}</p>
+        <p className="text-(--ink-soft)">{ui.adult.resetDescription}</p>
 
         {!confirmReset ? (
           <Button variant="primary" className="mt-4" onClick={onAskReset}>

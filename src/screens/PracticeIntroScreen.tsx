@@ -26,22 +26,22 @@ export default function PracticeIntroScreen({
       </Button>
       <Panel tone="soft">
         <h2 className="text-2xl">{lesson.title}</h2>
-        <div className="mt-4 grid gap-2 text-[var(--ink-soft)]">
+        <div className="mt-4 grid gap-2 text-(--ink-soft)">
           <p>
             {ui.practiceIntro.newKeys}:{" "}
-            <span className="font-medium text-[var(--ink)]">
+            <span className="font-medium text-(--ink)">
               {keyList(lesson.newKeys)}
             </span>
           </p>
           <p>
             {ui.practiceIntro.reviewKeys}:{" "}
-            <span className="font-medium text-[var(--ink)]">
+            <span className="font-medium text-(--ink)">
               {keyList(lesson.reviewKeys)}
             </span>
           </p>
           <p>
             {ui.practiceIntro.exercises}:{" "}
-            <span className="font-medium text-[var(--ink)]">
+            <span className="font-medium text-(--ink)">
               {lesson.exercises.length}
             </span>
           </p>

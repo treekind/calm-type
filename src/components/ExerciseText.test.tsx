@@ -7,7 +7,7 @@ describe('ExerciseText', () => {
     render(<ExerciseText targetText="haus" charIndex={1} />);
 
     const activeChar = screen.getByText('a');
-    expect(activeChar).toHaveClass('bg-[var(--char-active-bg)]');
+    expect(activeChar).toHaveClass('bg-(--char-active-bg)');
     expect(activeChar).toHaveClass('font-semibold');
   });
 });

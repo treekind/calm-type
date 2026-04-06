@@ -33,7 +33,7 @@ describe('KeyboardQwertz', () => {
     const qLabel = screen.getByText('q');
     const keyContainer = qLabel.closest('div');
     expect(keyContainer).toBeInTheDocument();
-    expect(keyContainer).toHaveClass('border-[var(--accent)]');
+    expect(keyContainer).toHaveClass('border-(--accent)');
 
     if (!keyContainer) {
       return;
@@ -72,22 +72,22 @@ describe('KeyboardQwertz', () => {
     const diaeresisLabel = screen.getByText('¨');
     const diaeresisKey = diaeresisLabel.closest('div');
     expect(diaeresisKey).toBeInTheDocument();
-    expect(diaeresisKey).toHaveClass('border-[var(--accent)]');
+    expect(diaeresisKey).toHaveClass('border-(--accent)');
 
     const shiftForExclamation = screen.getAllByText('Shift');
-    expect(shiftForExclamation[0]).toHaveClass('border-[var(--accent)]');
-    expect(shiftForExclamation[1]).not.toHaveClass('border-[var(--accent)]');
+    expect(shiftForExclamation[0]).toHaveClass('border-(--accent)');
+    expect(shiftForExclamation[1]).not.toHaveClass('border-(--accent)');
 
     rerender(<KeyboardQwertz targetKey="?" showHints={true} showFingers={false} />);
 
     const apostropheLabel = screen.getByText("'");
     const apostropheKey = apostropheLabel.closest('div');
     expect(apostropheKey).toBeInTheDocument();
-    expect(apostropheKey).toHaveClass('border-[var(--accent)]');
+    expect(apostropheKey).toHaveClass('border-(--accent)');
 
     const shiftForQuestion = screen.getAllByText('Shift');
-    expect(shiftForQuestion[0]).toHaveClass('border-[var(--accent)]');
-    expect(shiftForQuestion[1]).not.toHaveClass('border-[var(--accent)]');
+    expect(shiftForQuestion[0]).toHaveClass('border-(--accent)');
+    expect(shiftForQuestion[1]).not.toHaveClass('border-(--accent)');
   });
 
   it('shows recommended shift side for uppercase letters', () => {
@@ -96,26 +96,26 @@ describe('KeyboardQwertz', () => {
     );
 
     let shiftKeys = screen.getAllByText('Shift');
-    expect(shiftKeys[0]).not.toHaveClass('border-[var(--accent)]');
-    expect(shiftKeys[1]).toHaveClass('border-[var(--accent)]');
+    expect(shiftKeys[0]).not.toHaveClass('border-(--accent)');
+    expect(shiftKeys[1]).toHaveClass('border-(--accent)');
 
     rerender(<KeyboardQwertz targetKey="L" showHints={true} showFingers={false} />);
     shiftKeys = screen.getAllByText('Shift');
-    expect(shiftKeys[0]).toHaveClass('border-[var(--accent)]');
-    expect(shiftKeys[1]).not.toHaveClass('border-[var(--accent)]');
+    expect(shiftKeys[0]).toHaveClass('border-(--accent)');
+    expect(shiftKeys[1]).not.toHaveClass('border-(--accent)');
 
     rerender(<KeyboardQwertz targetKey="Ä" showHints={true} showFingers={false} />);
     const diaeresisLabel = screen.getByText('¨');
     const diaeresisKey = diaeresisLabel.closest('div');
-    expect(diaeresisKey).toHaveClass('border-[var(--accent)]');
+    expect(diaeresisKey).toHaveClass('border-(--accent)');
 
     const aLabel = screen.getByText('a');
     const aKey = aLabel.closest('div');
-    expect(aKey).toHaveClass('border-[var(--accent)]');
+    expect(aKey).toHaveClass('border-(--accent)');
 
     shiftKeys = screen.getAllByText('Shift');
-    expect(shiftKeys[0]).not.toHaveClass('border-[var(--accent)]');
-    expect(shiftKeys[1]).toHaveClass('border-[var(--accent)]');
+    expect(shiftKeys[0]).not.toHaveClass('border-(--accent)');
+    expect(shiftKeys[1]).toHaveClass('border-(--accent)');
   });
 
   it('shows alt layer labels used in lessons', () => {

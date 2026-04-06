@@ -33,7 +33,7 @@ export default function HomeScreen({
         {ui.home.adult}
       </Button>
       {!hasProgress ? (
-        <p className="pt-3 text-center text-sm text-[var(--ink-soft)]">
+        <p className="pt-3 text-center text-sm text-(--ink-soft)">
           {ui.home.noProgress}
         </p>
       ) : null}

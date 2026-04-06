@@ -6,15 +6,15 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 }
 
 const baseClass =
-  "inline-flex items-center justify-center rounded-lg border px-4 py-2.5 text-base transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--highlight)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--panel)] disabled:cursor-not-allowed disabled:opacity-60";
+  "inline-flex items-center justify-center rounded-lg border px-4 py-2.5 text-base transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-(--highlight) focus-visible:ring-offset-2 focus-visible:ring-offset-(--panel) disabled:cursor-not-allowed disabled:opacity-60";
 
 const variantClass: Record<NonNullable<ButtonProps["variant"]>, string> = {
   primary:
-    "border-[var(--accent)] bg-[var(--accent)] text-white hover:bg-[#3f5a4b] active:bg-[#364f41]",
+    "border-(--accent) bg-(--accent) text-white hover:bg-[#3f5a4b] active:bg-[#364f41]",
   secondary:
-    "border-[var(--line)] bg-[var(--bg-soft)] text-[var(--ink)] hover:bg-[var(--panel)]",
+    "border-(--line) bg-(--bg-soft) text-(--ink) hover:bg-(--panel)",
   ghost:
-    "border-[var(--line)] bg-transparent text-[var(--ink-soft)] hover:bg-[var(--bg-soft)]",
+    "border-(--line) bg-transparent text-(--ink-soft) hover:bg-(--bg-soft)",
 };
 
 export default function Button({
