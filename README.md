@@ -9,7 +9,7 @@ It focuses on emotional safety, predictable flow, and meaningful language instea
 - Predictable lesson structure and stable UI
 - German-first experience (UI + lesson content)
 - Support for physical Swiss-German QWERTZ keyboards
-- Local-only data storage with offline support
+- Local-only data storage
 
 ## Core Principles
 
@@ -29,7 +29,6 @@ It focuses on emotional safety, predictable flow, and meaningful language instea
 - Optional keyboard and finger hints using a DE-QWERTZ layout
 - High-contrast mode for accessibility
 - Progress and settings persisted in `localStorage`
-- Service worker registration for offline behavior
 
 ## Getting Started
 
@@ -82,10 +81,6 @@ CalmType stores app state locally in the browser only:
 - `calmtype.progress`
 
 There is no backend, no account system, and no cloud sync in the MVP.
-
-## Offline Support
-
-The app registers a service worker (`public/sw.js`) to cache same-origin GET requests and improve resilience when offline.
 
 ## Content and Language
 

@@ -31,7 +31,6 @@ The system prioritizes:
 - TypeScript
 - Vite
 - localStorage
-- Service Worker (offline)
 - Tailwindcss v4 for CSS
 
 ---
