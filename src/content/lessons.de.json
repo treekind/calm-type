@@ -20,103 +20,45 @@
       "exercises": [
         {
           "id": "l1-e1",
-          "type": "single-key",
-          "instruction": "Drücke A.",
-          "targetText": "a",
-          "targetKeys": [
-            "a"
-          ]
+          "type": "pattern",
+          "instruction": "Tippe das Muster.",
+          "targetText": "asdf asdf fj fj asdf"
         },
         {
           "id": "l1-e2",
-          "type": "single-key",
-          "instruction": "Drücke Ö.",
-          "targetText": "ö",
-          "targetKeys": [
-            "ö"
-          ]
+          "type": "pattern",
+          "instruction": "Tippe das Muster.",
+          "targetText": "jklö jklö fj fj jklö"
         },
         {
           "id": "l1-e3",
           "type": "pattern",
           "instruction": "Tippe das Muster.",
-          "targetText": "asdf jklö",
-          "targetKeys": [
-            "a",
-            "s",
-            "d",
-            "f",
-            "j",
-            "k",
-            "l",
-            "ö",
-            "space"
-          ]
+          "targetText": "asdf jklö asdf jklö fj"
         },
         {
           "id": "l1-e4",
           "type": "pattern",
           "instruction": "Tippe das Muster.",
-          "targetText": "a s d f j k l ö",
-          "targetKeys": [
-            "a",
-            "s",
-            "d",
-            "f",
-            "j",
-            "k",
-            "l",
-            "ö",
-            "space"
-          ]
+          "targetText": "asdf fj jklö fj asdf"
         },
         {
           "id": "l1-e5",
           "type": "pattern",
           "instruction": "Tippe das Muster.",
-          "targetText": "asdf jklö",
-          "targetKeys": [
-            "a",
-            "s",
-            "d",
-            "f",
-            "space",
-            "j",
-            "k",
-            "l",
-            "ö"
-          ]
+          "targetText": "fj asdf fj jklö fj"
         },
         {
           "id": "l1-e6",
           "type": "pattern",
           "instruction": "Tippe das Muster.",
-          "targetText": "a s d f j k l ö",
-          "targetKeys": [
-            "a",
-            "space",
-            "s",
-            "d",
-            "f",
-            "j",
-            "k",
-            "l",
-            "ö"
-          ]
+          "targetText": "asdf jklö fj asdf jklö"
         },
         {
           "id": "l1-e7",
           "type": "pattern",
           "instruction": "Tippe das Muster.",
-          "targetText": "fj fj as sk",
-          "targetKeys": [
-            "f",
-            "j",
-            "space",
-            "a",
-            "s",
-            "k"
-          ]
+          "targetText": "jklö fj asdf jklö fj"
         }
       ]
     },
@@ -141,81 +83,45 @@
       "exercises": [
         {
           "id": "l2-e1",
-          "type": "single-key",
-          "instruction": "Drücke E.",
-          "targetText": "e",
-          "targetKeys": [
-            "e"
-          ]
+          "type": "pattern",
+          "instruction": "Tippe das Muster.",
+          "targetText": "le se ne en se"
         },
         {
           "id": "l2-e2",
-          "type": "single-key",
-          "instruction": "Drücke N.",
-          "targetText": "n",
-          "targetKeys": [
-            "n"
-          ]
+          "type": "pattern",
+          "instruction": "Tippe das Muster.",
+          "targetText": "na se le ne as"
         },
         {
           "id": "l2-e3",
-          "type": "pattern",
-          "instruction": "Tippe das Muster.",
-          "targetText": "en ne es",
-          "targetKeys": [
-            "e",
-            "n",
-            "s",
-            "space"
-          ]
+          "type": "real-word",
+          "instruction": "Tippe die Wörter.",
+          "targetText": "lesen nase essen sand alles"
         },
         {
           "id": "l2-e4",
           "type": "real-word",
-          "instruction": "Tippe das Wort.",
-          "targetText": "lesen",
-          "targetKeys": [
-            "l",
-            "e",
-            "s",
-            "n"
-          ]
+          "instruction": "Tippe die Wörter.",
+          "targetText": "essen lesen nase sand alles"
         },
         {
           "id": "l2-e5",
           "type": "pattern",
           "instruction": "Tippe das Muster.",
-          "targetText": "en en en",
-          "targetKeys": [
-            "e",
-            "n",
-            "space"
-          ]
+          "targetText": "le se ne fj asdf"
         },
         {
           "id": "l2-e6",
-          "type": "pattern",
-          "instruction": "Tippe das Muster.",
-          "targetText": "lesen lesen",
-          "targetKeys": [
-            "l",
-            "e",
-            "s",
-            "n",
-            "space"
-          ]
+          "type": "real-word",
+          "instruction": "Tippe die Wörter.",
+          "targetText": "nase essen lesen alles sand"
         },
         {
           "id": "l2-e7",
-          "type": "real-word",
-          "instruction": "Tippe das Wort.",
-          "targetText": "nase",
-          "targetKeys": [
-            "n",
-            "a",
-            "s",
-            "e"
-          ]
+          "type": "pattern",
+          "instruction": "Tippe das Muster.",
+          "targetText": "le se asdf jklö en"
         }
       ]
     },
@@ -242,82 +148,45 @@
       "exercises": [
         {
           "id": "l3-e1",
-          "type": "single-key",
-          "instruction": "Drücke R.",
-          "targetText": "r",
-          "targetKeys": [
-            "r"
-          ]
+          "type": "pattern",
+          "instruction": "Tippe das Muster.",
+          "targetText": "rei se ri ir ne"
         },
         {
           "id": "l3-e2",
-          "type": "single-key",
-          "instruction": "Drücke I.",
-          "targetText": "i",
-          "targetKeys": [
-            "i"
-          ]
+          "type": "pattern",
+          "instruction": "Tippe das Muster.",
+          "targetText": "si re ne ri se"
         },
         {
           "id": "l3-e3",
           "type": "real-word",
-          "instruction": "Tippe das Wort.",
-          "targetText": "reise",
-          "targetKeys": [
-            "r",
-            "e",
-            "i",
-            "s"
-          ]
+          "instruction": "Tippe die Wörter.",
+          "targetText": "reise serie reisen sirene riese"
         },
         {
           "id": "l3-e4",
           "type": "real-word",
-          "instruction": "Tippe das Wort.",
-          "targetText": "sirene",
-          "targetKeys": [
-            "s",
-            "i",
-            "r",
-            "e",
-            "n"
-          ]
+          "instruction": "Tippe die Wörter.",
+          "targetText": "sirene reisen serie riese lesen"
         },
         {
           "id": "l3-e5",
           "type": "pattern",
           "instruction": "Tippe das Muster.",
-          "targetText": "ri ri ri",
-          "targetKeys": [
-            "r",
-            "i",
-            "space"
-          ]
+          "targetText": "rei se ri fj asdf"
         },
         {
           "id": "l3-e6",
           "type": "real-word",
-          "instruction": "Tippe das Wort.",
-          "targetText": "reisen",
-          "targetKeys": [
-            "r",
-            "e",
-            "i",
-            "s",
-            "n"
-          ]
+          "instruction": "Tippe die Wörter.",
+          "targetText": "reise sirene nase lesen riese"
         },
         {
           "id": "l3-e7",
-          "type": "real-word",
-          "instruction": "Tippe das Wort.",
-          "targetText": "serie",
-          "targetKeys": [
-            "s",
-            "e",
-            "r",
-            "i"
-          ]
+          "type": "pattern",
+          "instruction": "Tippe das Muster.",
+          "targetText": "rei se asdf jklö ir"
         }
       ]
     },
@@ -346,84 +215,45 @@
       "exercises": [
         {
           "id": "l4-e1",
-          "type": "single-key",
-          "instruction": "Drücke T.",
-          "targetText": "t",
-          "targetKeys": [
-            "t"
-          ]
+          "type": "pattern",
+          "instruction": "Tippe das Muster.",
+          "targetText": "the hei ter hei the"
         },
         {
           "id": "l4-e2",
-          "type": "single-key",
-          "instruction": "Drücke H.",
-          "targetText": "h",
-          "targetKeys": [
-            "h"
-          ]
+          "type": "pattern",
+          "instruction": "Tippe das Muster.",
+          "targetText": "ha te hi he th"
         },
         {
           "id": "l4-e3",
           "type": "real-word",
-          "instruction": "Tippe das Wort.",
-          "targetText": "heiter",
-          "targetKeys": [
-            "h",
-            "e",
-            "i",
-            "t",
-            "r"
-          ]
+          "instruction": "Tippe die Wörter.",
+          "targetText": "heiter hirte hatte theater hirse"
         },
         {
           "id": "l4-e4",
           "type": "real-word",
-          "instruction": "Tippe das Wort.",
-          "targetText": "theater",
-          "targetKeys": [
-            "t",
-            "h",
-            "e",
-            "a",
-            "r"
-          ]
+          "instruction": "Tippe die Wörter.",
+          "targetText": "theater hatte hirte heiter reisen"
         },
         {
           "id": "l4-e5",
           "type": "pattern",
           "instruction": "Tippe das Muster.",
-          "targetText": "th th th",
-          "targetKeys": [
-            "t",
-            "h",
-            "space"
-          ]
+          "targetText": "the hai te fj asdf"
         },
         {
           "id": "l4-e6",
           "type": "real-word",
-          "instruction": "Tippe das Wort.",
-          "targetText": "hirte",
-          "targetKeys": [
-            "h",
-            "i",
-            "r",
-            "t",
-            "e"
-          ]
+          "instruction": "Tippe die Wörter.",
+          "targetText": "theater hirte nase lesen heiter"
         },
         {
           "id": "l4-e7",
-          "type": "real-word",
-          "instruction": "Tippe das Wort.",
-          "targetText": "heiter",
-          "targetKeys": [
-            "h",
-            "e",
-            "i",
-            "t",
-            "r"
-          ]
+          "type": "pattern",
+          "instruction": "Tippe das Muster.",
+          "targetText": "the hai asdf jklö th"
         }
       ]
     },
@@ -454,82 +284,45 @@
       "exercises": [
         {
           "id": "l5-e1",
-          "type": "single-key",
-          "instruction": "Drücke C.",
-          "targetText": "c",
-          "targetKeys": [
-            "c"
-          ]
+          "type": "pattern",
+          "instruction": "Tippe das Muster.",
+          "targetText": "hus ruh such uch suh"
         },
         {
           "id": "l5-e2",
-          "type": "single-key",
-          "instruction": "Drücke U.",
-          "targetText": "u",
-          "targetKeys": [
-            "u"
-          ]
+          "type": "pattern",
+          "instruction": "Tippe das Muster.",
+          "targetText": "such haus ruh hus cua"
         },
         {
           "id": "l5-e3",
           "type": "real-word",
-          "instruction": "Tippe das Wort.",
-          "targetText": "ruhe",
-          "targetKeys": [
-            "r",
-            "u",
-            "h",
-            "e"
-          ]
+          "instruction": "Tippe die Wörter.",
+          "targetText": "ruhe suche haus husten stunde"
         },
         {
           "id": "l5-e4",
           "type": "real-word",
-          "instruction": "Tippe das Wort.",
-          "targetText": "suche",
-          "targetKeys": [
-            "s",
-            "u",
-            "c",
-            "h",
-            "e"
-          ]
+          "instruction": "Tippe die Wörter.",
+          "targetText": "haus husten suche ruhe stunde"
         },
         {
           "id": "l5-e5",
           "type": "pattern",
           "instruction": "Tippe das Muster.",
-          "targetText": "cu cu cu",
-          "targetKeys": [
-            "c",
-            "u",
-            "space"
-          ]
+          "targetText": "such ruh hus fj asdf"
         },
         {
           "id": "l5-e6",
           "type": "real-word",
-          "instruction": "Tippe das Wort.",
-          "targetText": "suche",
-          "targetKeys": [
-            "s",
-            "u",
-            "c",
-            "h",
-            "e"
-          ]
+          "instruction": "Tippe die Wörter.",
+          "targetText": "suche ruhe haus lesen stunde"
         },
         {
           "id": "l5-e7",
-          "type": "real-word",
-          "instruction": "Tippe das Wort.",
-          "targetText": "ruhe",
-          "targetKeys": [
-            "r",
-            "u",
-            "h",
-            "e"
-          ]
+          "type": "pattern",
+          "instruction": "Tippe das Muster.",
+          "targetText": "hus such asdf jklö uch"
         }
       ]
     },
@@ -578,104 +371,43 @@
           "id": "l6-e1",
           "type": "pattern",
           "instruction": "Tippe das Muster.",
-          "targetText": "ASDF JKLÖ",
-          "targetKeys": [
-            "a",
-            "s",
-            "d",
-            "f",
-            "j",
-            "k",
-            "l",
-            "ö",
-            "space"
-          ]
+          "targetText": "Na Ri Ta Se Ni"
         },
         {
           "id": "l6-e2",
-          "type": "real-word",
-          "instruction": "Tippe das Wort.",
-          "targetText": "Nase",
-          "targetKeys": [
-            "n",
-            "a",
-            "s",
-            "e"
-          ]
+          "type": "pattern",
+          "instruction": "Tippe das Muster.",
+          "targetText": "Hu Ha Se Ti Na"
         },
         {
           "id": "l6-e3",
           "type": "real-word",
-          "instruction": "Tippe das Wort.",
-          "targetText": "Hut",
-          "targetKeys": [
-            "h",
-            "u",
-            "t"
-          ]
+          "instruction": "Tippe die Wörter.",
+          "targetText": "Nase Rita Nina Hase Tasse"
         },
         {
           "id": "l6-e4",
-          "type": "pattern",
-          "instruction": "Tippe das Muster.",
-          "targetText": "Rita und Nina",
-          "targetKeys": [
-            "r",
-            "i",
-            "t",
-            "a",
-            "u",
-            "n",
-            "d",
-            "space"
-          ]
+          "type": "real-word",
+          "instruction": "Tippe die Wörter.",
+          "targetText": "Hut Nina Hase Rita Nase"
         },
         {
           "id": "l6-e5",
           "type": "pattern",
           "instruction": "Tippe das Muster.",
-          "targetText": "Nase Hut",
-          "targetKeys": [
-            "n",
-            "a",
-            "s",
-            "e",
-            "space",
-            "h",
-            "u",
-            "t"
-          ]
+          "targetText": "Na Se Ti Fj Jk"
         },
         {
           "id": "l6-e6",
-          "type": "pattern",
-          "instruction": "Tippe das Muster.",
-          "targetText": "Rita Nina",
-          "targetKeys": [
-            "r",
-            "i",
-            "t",
-            "a",
-            "space",
-            "n"
-          ]
+          "type": "real-word",
+          "instruction": "Tippe die Wörter.",
+          "targetText": "Hase Tasse Nase Rita Nina"
         },
         {
           "id": "l6-e7",
-          "type": "real-sentence",
-          "instruction": "Tippe den Satz.",
-          "targetText": "Nina hat den Hut",
-          "targetKeys": [
-            "n",
-            "i",
-            "a",
-            "space",
-            "h",
-            "t",
-            "d",
-            "e",
-            "u"
-          ]
+          "type": "pattern",
+          "instruction": "Tippe das Muster.",
+          "targetText": "Na Ri Asdf Jklö Ti"
         }
       ]
     },
@@ -710,75 +442,45 @@
       "exercises": [
         {
           "id": "l7-e1",
-          "type": "single-key",
-          "instruction": "Drücke G.",
-          "targetText": "g",
-          "targetKeys": [
-            "g"
-          ]
+          "type": "pattern",
+          "instruction": "Tippe das Muster.",
+          "targetText": "gar geh gin gas reg"
         },
         {
           "id": "l7-e2",
-          "type": "single-key",
-          "instruction": "Drücke den Punkt.",
-          "targetText": ".",
-          "targetKeys": [
-            "."
-          ]
+          "type": "pattern",
+          "instruction": "Tippe das Muster.",
+          "targetText": "ga. ge: gi: ga: ge."
         },
         {
           "id": "l7-e3",
-          "type": "single-key",
-          "instruction": "Drücke den Doppelpunkt.",
-          "targetText": ":",
-          "targetKeys": [
-            ":"
-          ]
+          "type": "real-word",
+          "instruction": "Tippe die Wörter.",
+          "targetText": "gans garten regen ring theater"
         },
         {
           "id": "l7-e4",
-          "type": "real-sentence",
-          "instruction": "Tippe den Satz.",
-          "targetText": "Gina geht.",
-          "targetKeys": [
-            "g",
-            "i",
-            "n",
-            "a",
-            "e",
-            "h",
-            "t",
-            "."
-          ]
+          "type": "real-word",
+          "instruction": "Tippe die Wörter.",
+          "targetText": "regen ring garten gans sirene"
         },
         {
           "id": "l7-e5",
           "type": "pattern",
           "instruction": "Tippe das Muster.",
-          "targetText": "g: g: g:",
-          "targetKeys": [
-            "g",
-            ":",
-            "space"
-          ]
+          "targetText": "gar ten gin fj. ge"
         },
         {
           "id": "l7-e6",
           "type": "real-sentence",
           "instruction": "Tippe den Satz.",
-          "targetText": "Gina sagt: hi.",
-          "targetKeys": [
-            "g",
-            "i",
-            "n",
-            "a",
-            "space",
-            "s",
-            "t",
-            ":",
-            "h",
-            "."
-          ]
+          "targetText": "Gina sagt: nein. Rita nickt."
+        },
+        {
+          "id": "l7-e7",
+          "type": "pattern",
+          "instruction": "Tippe das Muster.",
+          "targetText": "gar ten asdf jklö. reg"
         }
       ]
     },
@@ -816,78 +518,45 @@
       "exercises": [
         {
           "id": "l8-e1",
-          "type": "single-key",
-          "instruction": "Drücke O.",
-          "targetText": "o",
-          "targetKeys": [
-            "o"
-          ]
+          "type": "pattern",
+          "instruction": "Tippe das Muster.",
+          "targetText": "mon mor mo na kom"
         },
         {
           "id": "l8-e2",
-          "type": "single-key",
-          "instruction": "Drücke M.",
-          "targetText": "m",
-          "targetKeys": [
-            "m"
-          ]
+          "type": "pattern",
+          "instruction": "Tippe das Muster.",
+          "targetText": "mo na go mo mor"
         },
         {
           "id": "l8-e3",
           "type": "real-word",
-          "instruction": "Tippe das Wort.",
-          "targetText": "Mond",
-          "targetKeys": [
-            "m",
-            "o",
-            "n",
-            "d"
-          ]
+          "instruction": "Tippe die Wörter.",
+          "targetText": "Mond Morgen Mona Motor Hase"
         },
         {
           "id": "l8-e4",
-          "type": "real-sentence",
-          "instruction": "Tippe den Satz.",
-          "targetText": "Mona ist im Garten.",
-          "targetKeys": [
-            "m",
-            "o",
-            "n",
-            "a",
-            "i",
-            "s",
-            "t",
-            "g",
-            "r",
-            "e",
-            ".",
-            "space"
-          ]
+          "type": "real-word",
+          "instruction": "Tippe die Wörter.",
+          "targetText": "Mona Motor Morgen Mond Theater"
         },
         {
           "id": "l8-e5",
           "type": "pattern",
           "instruction": "Tippe das Muster.",
-          "targetText": "mo mo mo",
-          "targetKeys": [
-            "m",
-            "o",
-            "space"
-          ]
+          "targetText": "mon mor fj kom mon"
         },
         {
           "id": "l8-e6",
-          "type": "real-word",
-          "instruction": "Tippe das Wort.",
-          "targetText": "Morgen",
-          "targetKeys": [
-            "m",
-            "o",
-            "r",
-            "g",
-            "e",
-            "n"
-          ]
+          "type": "real-sentence",
+          "instruction": "Tippe den Satz.",
+          "targetText": "Mona kommt. Oma ist da."
+        },
+        {
+          "id": "l8-e7",
+          "type": "pattern",
+          "instruction": "Tippe das Muster.",
+          "targetText": "mor mon asdf jklö kom"
         }
       ]
     },
@@ -927,78 +596,45 @@
       "exercises": [
         {
           "id": "l9-e1",
-          "type": "single-key",
-          "instruction": "Drücke B.",
-          "targetText": "b",
-          "targetKeys": [
-            "b"
-          ]
+          "type": "pattern",
+          "instruction": "Tippe das Muster.",
+          "targetText": "bro wab wo be bod"
         },
         {
           "id": "l9-e2",
-          "type": "single-key",
-          "instruction": "Drücke W.",
-          "targetText": "w",
-          "targetKeys": [
-            "w"
-          ]
+          "type": "pattern",
+          "instruction": "Tippe das Muster.",
+          "targetText": "wo be bo bro wab"
         },
         {
           "id": "l9-e3",
           "type": "real-word",
-          "instruction": "Tippe das Wort.",
-          "targetText": "Brot",
-          "targetKeys": [
-            "b",
-            "r",
-            "o",
-            "t"
-          ]
+          "instruction": "Tippe die Wörter.",
+          "targetText": "Brot Wabe Wort Boden Hase"
         },
         {
           "id": "l9-e4",
-          "type": "real-sentence",
-          "instruction": "Tippe den Satz.",
-          "targetText": "Ben wohnt im Norden.",
-          "targetKeys": [
-            "b",
-            "e",
-            "n",
-            "w",
-            "o",
-            "h",
-            "t",
-            "i",
-            "m",
-            "r",
-            "d",
-            ".",
-            "space"
-          ]
+          "type": "real-word",
+          "instruction": "Tippe die Wörter.",
+          "targetText": "Wort Boden Wabe Brot Theater"
         },
         {
           "id": "l9-e5",
           "type": "pattern",
           "instruction": "Tippe das Muster.",
-          "targetText": "bw bw bw",
-          "targetKeys": [
-            "b",
-            "w",
-            "space"
-          ]
+          "targetText": "bro wob fj wo bro"
         },
         {
           "id": "l9-e6",
-          "type": "real-word",
-          "instruction": "Tippe das Wort.",
-          "targetText": "Waben",
-          "targetKeys": [
-            "w",
-            "a",
-            "b",
-            "e",
-            "n"
-          ]
+          "type": "real-sentence",
+          "instruction": "Tippe den Satz.",
+          "targetText": "Ben wohnt oben. Oma da."
+        },
+        {
+          "id": "l9-e7",
+          "type": "pattern",
+          "instruction": "Tippe das Muster.",
+          "targetText": "bro wob asdf jklö bod"
         }
       ]
     },
@@ -1040,84 +676,45 @@
       "exercises": [
         {
           "id": "l10-e1",
-          "type": "single-key",
-          "instruction": "Drücke Z.",
-          "targetText": "z",
-          "targetKeys": [
-            "z"
-          ]
+          "type": "pattern",
+          "instruction": "Tippe das Muster.",
+          "targetText": "zo za zi ze zu"
         },
         {
           "id": "l10-e2",
-          "type": "single-key",
-          "instruction": "Drücke das Komma.",
-          "targetText": ",",
-          "targetKeys": [
-            ","
-          ]
+          "type": "pattern",
+          "instruction": "Tippe das Muster.",
+          "targetText": "za, ze; zo, za, ze;"
         },
         {
           "id": "l10-e3",
-          "type": "single-key",
-          "instruction": "Drücke das Semikolon.",
-          "targetText": ";",
-          "targetKeys": [
-            ";"
-          ]
+          "type": "real-word",
+          "instruction": "Tippe die Wörter.",
+          "targetText": "Zoo Zebra Zone Zaun Hose"
         },
         {
           "id": "l10-e4",
-          "type": "real-sentence",
-          "instruction": "Tippe den Satz.",
-          "targetText": "Zora, wir warten.",
-          "targetKeys": [
-            "z",
-            "o",
-            "r",
-            "a",
-            ",",
-            "w",
-            "i",
-            "t",
-            "e",
-            "n",
-            ".",
-            "space"
-          ]
+          "type": "real-word",
+          "instruction": "Tippe die Wörter.",
+          "targetText": "Zone Zaun Zebra Wort Sonne"
         },
         {
           "id": "l10-e5",
           "type": "pattern",
           "instruction": "Tippe das Muster.",
-          "targetText": "z, z; z,",
-          "targetKeys": [
-            "z",
-            ",",
-            "space",
-            ";"
-          ]
+          "targetText": "zo, za, fj ze; zo,"
         },
         {
           "id": "l10-e6",
           "type": "real-sentence",
           "instruction": "Tippe den Satz.",
-          "targetText": "Zora sagt; wir warten.",
-          "targetKeys": [
-            "z",
-            "o",
-            "r",
-            "a",
-            "space",
-            "s",
-            "g",
-            "t",
-            ";",
-            "w",
-            "i",
-            "e",
-            "n",
-            "."
-          ]
+          "targetText": "Zora, wir warten. Oma kommt."
+        },
+        {
+          "id": "l10-e7",
+          "type": "pattern",
+          "instruction": "Tippe das Muster.",
+          "targetText": "ze bra asdf jklö zo"
         }
       ]
     },
@@ -1162,77 +759,45 @@
       "exercises": [
         {
           "id": "l11-e1",
-          "type": "single-key",
-          "instruction": "Drücke V.",
-          "targetText": "v",
-          "targetKeys": [
-            "v"
-          ]
+          "type": "pattern",
+          "instruction": "Tippe das Muster.",
+          "targetText": "va pa pi vi ve"
         },
         {
           "id": "l11-e2",
-          "type": "single-key",
-          "instruction": "Drücke P.",
-          "targetText": "p",
-          "targetKeys": [
-            "p"
-          ]
+          "type": "pattern",
+          "instruction": "Tippe das Muster.",
+          "targetText": "va se pa pi pe"
         },
         {
           "id": "l11-e3",
           "type": "real-word",
-          "instruction": "Tippe das Wort.",
-          "targetText": "Vase",
-          "targetKeys": [
-            "v",
-            "a",
-            "s",
-            "e"
-          ]
+          "instruction": "Tippe die Wörter.",
+          "targetText": "Vase Papa Pirat Paket Hause"
         },
         {
           "id": "l11-e4",
-          "type": "real-sentence",
-          "instruction": "Tippe den Satz.",
-          "targetText": "Vera packt Brot.",
-          "targetKeys": [
-            "v",
-            "e",
-            "r",
-            "a",
-            "p",
-            "c",
-            "k",
-            "t",
-            "b",
-            "o",
-            ".",
-            "space"
-          ]
+          "type": "real-word",
+          "instruction": "Tippe die Wörter.",
+          "targetText": "Pirat Paket Papa Vase Worte"
         },
         {
           "id": "l11-e5",
           "type": "pattern",
           "instruction": "Tippe das Muster.",
-          "targetText": "vp vp vp",
-          "targetKeys": [
-            "v",
-            "p",
-            "space"
-          ]
+          "targetText": "pa pi va fj pa"
         },
         {
           "id": "l11-e6",
-          "type": "real-word",
-          "instruction": "Tippe das Wort.",
-          "targetText": "Paprika",
-          "targetKeys": [
-            "p",
-            "a",
-            "r",
-            "i",
-            "k"
-          ]
+          "type": "real-sentence",
+          "instruction": "Tippe den Satz.",
+          "targetText": "Vera packt Vase. Papa hilft."
+        },
+        {
+          "id": "l11-e7",
+          "type": "pattern",
+          "instruction": "Tippe das Muster.",
+          "targetText": "va se asdf jklö pi"
         }
       ]
     },
@@ -1279,68 +844,45 @@
       "exercises": [
         {
           "id": "l12-e1",
-          "type": "single-key",
-          "instruction": "Drücke Ü.",
-          "targetText": "Ü",
-          "targetKeys": [
-            "ü"
-          ]
+          "type": "pattern",
+          "instruction": "Tippe das Muster.",
+          "targetText": "Ü Ä Ü Ä Ö"
         },
         {
           "id": "l12-e2",
-          "type": "single-key",
-          "instruction": "Drücke Ä.",
-          "targetText": "Ä",
-          "targetKeys": [
-            "ä"
-          ]
+          "type": "pattern",
+          "instruction": "Tippe das Muster.",
+          "targetText": "Mü Bä Rä Mü Öä"
         },
         {
           "id": "l12-e3",
           "type": "real-word",
-          "instruction": "Tippe das Wort.",
-          "targetText": "Müde",
-          "targetKeys": [
-            "m",
-            "ü",
-            "d",
-            "e"
-          ]
+          "instruction": "Tippe die Wörter.",
+          "targetText": "Müde Bär Bäume Väter Türen"
         },
         {
           "id": "l12-e4",
           "type": "real-word",
-          "instruction": "Tippe das Wort.",
-          "targetText": "Bär",
-          "targetKeys": [
-            "b",
-            "ä",
-            "r"
-          ]
+          "instruction": "Tippe die Wörter.",
+          "targetText": "Bäume Väter Bär Müde Türen"
         },
         {
           "id": "l12-e5",
           "type": "pattern",
           "instruction": "Tippe das Muster.",
-          "targetText": "ü ä ü ä",
-          "targetKeys": [
-            "ü",
-            "space",
-            "ä"
-          ]
+          "targetText": "müd bär öä fj asdf"
         },
         {
           "id": "l12-e6",
           "type": "real-word",
-          "instruction": "Tippe das Wort.",
-          "targetText": "Bäume",
-          "targetKeys": [
-            "b",
-            "ä",
-            "u",
-            "m",
-            "e"
-          ]
+          "instruction": "Tippe die Wörter.",
+          "targetText": "Bäume Väter Müde Bär Türen"
+        },
+        {
+          "id": "l12-e7",
+          "type": "pattern",
+          "instruction": "Tippe das Muster.",
+          "targetText": "bär müd asdf öä bä"
         }
       ]
     },
@@ -1388,72 +930,45 @@
       "exercises": [
         {
           "id": "l13-e1",
-          "type": "single-key",
-          "instruction": "Drücke das Fragezeichen.",
-          "targetText": "?",
-          "targetKeys": [
-            "?"
-          ]
+          "type": "pattern",
+          "instruction": "Tippe das Muster.",
+          "targetText": "quel qual qua que quo"
         },
         {
           "id": "l13-e2",
-          "type": "single-key",
-          "instruction": "Drücke Q.",
-          "targetText": "q",
-          "targetKeys": [
-            "q"
-          ]
+          "type": "pattern",
+          "instruction": "Tippe das Muster.",
+          "targetText": "qua? quel? quo? qua? quel?"
         },
         {
           "id": "l13-e3",
           "type": "real-word",
-          "instruction": "Tippe das Wort.",
-          "targetText": "Quelle",
-          "targetKeys": [
-            "q",
-            "u",
-            "e",
-            "l"
-          ]
+          "instruction": "Tippe die Wörter.",
+          "targetText": "Quelle Qualle Qual Quadrat Bäume"
         },
         {
           "id": "l13-e4",
-          "type": "pattern",
-          "instruction": "Tippe das Muster.",
-          "targetText": "Q q ?",
-          "targetKeys": [
-            "q",
-            "?",
-            "space"
-          ]
+          "type": "real-word",
+          "instruction": "Tippe die Wörter.",
+          "targetText": "Qual Quadrat Quelle Bär Müde"
         },
         {
           "id": "l13-e5",
           "type": "pattern",
           "instruction": "Tippe das Muster.",
-          "targetText": "q q ? q",
-          "targetKeys": [
-            "q",
-            "space",
-            "?"
-          ]
+          "targetText": "quel qual fj öä qua"
         },
         {
           "id": "l13-e6",
-          "type": "real-sentence",
-          "instruction": "Tippe den Satz.",
-          "targetText": "Quelle, ok?",
-          "targetKeys": [
-            "q",
-            "u",
-            "e",
-            "l",
-            ",",
-            "space",
-            "o",
-            "k",
-            "?"
-          ]
+          "type": "real-word",
+          "instruction": "Tippe die Wörter.",
+          "targetText": "Quelle Qualle Müde Bär Bäume"
+        },
+        {
+          "id": "l13-e7",
+          "type": "pattern",
+          "instruction": "Tippe das Muster.",
+          "targetText": "quel bär asdf öä qua"
         }
       ]
     },
@@ -1506,72 +1021,45 @@
       "exercises": [
         {
           "id": "l14-e1",
-          "type": "single-key",
-          "instruction": "Drücke Y.",
-          "targetText": "y",
-          "targetKeys": [
-            "y"
-          ]
+          "type": "pattern",
+          "instruction": "Tippe das Muster.",
+          "targetText": "xy yx xy yx xy"
         },
         {
           "id": "l14-e2",
-          "type": "single-key",
-          "instruction": "Drücke X.",
-          "targetText": "x",
-          "targetKeys": [
-            "x"
-          ]
+          "type": "pattern",
+          "instruction": "Tippe das Muster.",
+          "targetText": "x/y y/x x-y y-x x/y"
         },
         {
           "id": "l14-e3",
-          "type": "single-key",
-          "instruction": "Drücke den Bindestrich.",
-          "targetText": "-",
-          "targetKeys": [
-            "-"
-          ]
+          "type": "real-word",
+          "instruction": "Tippe die Wörter.",
+          "targetText": "Typ Hexe Text Yoga Typ"
         },
         {
           "id": "l14-e4",
-          "type": "pattern",
-          "instruction": "Tippe das Muster.",
-          "targetText": "x/y y/x",
-          "targetKeys": [
-            "x",
-            "y",
-            "/",
-            "space"
-          ]
+          "type": "real-word",
+          "instruction": "Tippe die Wörter.",
+          "targetText": "Text Yoga Hexe Typ Text"
         },
         {
           "id": "l14-e5",
-          "type": "real-word",
-          "instruction": "Tippe das Wort.",
-          "targetText": "Yoga-Kurs",
-          "targetKeys": [
-            "y",
-            "o",
-            "g",
-            "a",
-            "-",
-            "k",
-            "u",
-            "r",
-            "s"
-          ]
+          "type": "pattern",
+          "instruction": "Tippe das Muster.",
+          "targetText": "xy x/y x-y asdf jklö"
         },
         {
           "id": "l14-e6",
           "type": "pattern",
           "instruction": "Tippe das Muster.",
-          "targetText": "x-y / y-x",
-          "targetKeys": [
-            "x",
-            "-",
-            "y",
-            "space",
-            "/"
-          ]
+          "targetText": "asdf jklö x/y x-y xy"
+        },
+        {
+          "id": "l14-e7",
+          "type": "pattern",
+          "instruction": "Tippe das Muster.",
+          "targetText": "asdf xy jklö yx x/y"
         }
       ]
     },
@@ -1628,73 +1116,45 @@
       "exercises": [
         {
           "id": "l15-e1",
-          "type": "single-key",
-          "instruction": "Drücke das Ausrufezeichen.",
-          "targetText": "!",
-          "targetKeys": [
-            "!"
-          ]
+          "type": "pattern",
+          "instruction": "Tippe das Muster.",
+          "targetText": "! ! ! ? !"
         },
         {
           "id": "l15-e2",
-          "type": "single-key",
-          "instruction": "Drücke das Anführungszeichen.",
-          "targetText": "\"",
-          "targetKeys": [
-            "\""
-          ]
+          "type": "pattern",
+          "instruction": "Tippe das Muster.",
+          "targetText": "\" \" ' \" '"
         },
         {
           "id": "l15-e3",
           "type": "pattern",
           "instruction": "Tippe das Muster.",
-          "targetText": "( ) ( )",
-          "targetKeys": [
-            "(",
-            ")",
-            "space"
-          ]
+          "targetText": "() () () () ()"
         },
         {
           "id": "l15-e4",
           "type": "pattern",
           "instruction": "Tippe das Muster.",
-          "targetText": "_ _ ' '",
-          "targetKeys": [
-            "_",
-            "'",
-            "space"
-          ]
+          "targetText": "_ ' _ ' _"
         },
         {
           "id": "l15-e5",
           "type": "pattern",
           "instruction": "Tippe das Muster.",
-          "targetText": "\"Hallo!\"",
-          "targetKeys": [
-            "\"",
-            "h",
-            "a",
-            "l",
-            "o",
-            "!"
-          ]
+          "targetText": "!? \"\" () _' !?"
         },
         {
           "id": "l15-e6",
           "type": "pattern",
           "instruction": "Tippe das Muster.",
-          "targetText": "\"Ja!\" \"Nein!\"",
-          "targetKeys": [
-            "\"",
-            "j",
-            "a",
-            "!",
-            "space",
-            "n",
-            "e",
-            "i"
-          ]
+          "targetText": "asdf jklö !? \"\" ()"
+        },
+        {
+          "id": "l15-e7",
+          "type": "pattern",
+          "instruction": "Tippe das Muster.",
+          "targetText": "asdf !? jklö _' \"\""
         }
       ]
     },
@@ -1763,87 +1223,43 @@
           "id": "l16-e1",
           "type": "pattern",
           "instruction": "Tippe die Ziffernreihe.",
-          "targetText": "12345",
-          "targetKeys": [
-            "1",
-            "2",
-            "3",
-            "4",
-            "5"
-          ]
+          "targetText": "12345 23451 34512 45123 51234"
         },
         {
           "id": "l16-e2",
           "type": "pattern",
           "instruction": "Tippe die Ziffernreihe.",
-          "targetText": "67890",
-          "targetKeys": [
-            "6",
-            "7",
-            "8",
-            "9",
-            "0"
-          ]
+          "targetText": "67890 78906 89067 90678 06789"
         },
         {
           "id": "l16-e3",
           "type": "pattern",
           "instruction": "Tippe das Muster.",
-          "targetText": "2 4 6 8 0",
-          "targetKeys": [
-            "2",
-            "4",
-            "6",
-            "8",
-            "0",
-            "space"
-          ]
+          "targetText": "2 4 6 8 0"
         },
         {
           "id": "l16-e4",
           "type": "pattern",
           "instruction": "Tippe das Muster.",
-          "targetText": "9 7 5 3 1",
-          "targetKeys": [
-            "9",
-            "7",
-            "5",
-            "3",
-            "1",
-            "space"
-          ]
+          "targetText": "1 3 5 7 9"
         },
         {
           "id": "l16-e5",
           "type": "pattern",
           "instruction": "Tippe das Muster.",
-          "targetText": "0 1 2 3 4 5 6 7 8 9",
-          "targetKeys": [
-            "0",
-            "space",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9"
-          ]
+          "targetText": "11 22 33 44 55"
         },
         {
           "id": "l16-e6",
           "type": "pattern",
           "instruction": "Tippe das Muster.",
-          "targetText": "11 22 33 44",
-          "targetKeys": [
-            "1",
-            "space",
-            "2",
-            "3",
-            "4"
-          ]
+          "targetText": "10 20 30 asdf jklö"
+        },
+        {
+          "id": "l16-e7",
+          "type": "pattern",
+          "instruction": "Tippe das Muster.",
+          "targetText": "12 34 56 78 90"
         }
       ]
     },
@@ -1890,75 +1306,45 @@
       "exercises": [
         {
           "id": "l17-e1",
-          "type": "single-key",
-          "instruction": "Drücke das At-Zeichen.",
-          "targetText": "@",
-          "targetKeys": [
-            "@"
-          ]
+          "type": "pattern",
+          "instruction": "Tippe das Muster.",
+          "targetText": "@ % @ % @"
         },
         {
           "id": "l17-e2",
           "type": "pattern",
           "instruction": "Tippe das Muster.",
-          "targetText": "% # *",
-          "targetKeys": [
-            "%",
-            "#",
-            "*",
-            "space"
-          ]
+          "targetText": "% # * & %"
         },
         {
           "id": "l17-e3",
           "type": "pattern",
           "instruction": "Tippe das Muster.",
-          "targetText": "< > =",
-          "targetKeys": [
-            "<",
-            ">",
-            "=",
-            "space"
-          ]
+          "targetText": "< > = < ="
         },
         {
           "id": "l17-e4",
           "type": "pattern",
           "instruction": "Tippe das Muster.",
-          "targetText": "& § @",
-          "targetKeys": [
-            "&",
-            "§",
-            "@",
-            "space"
-          ]
+          "targetText": "& § @ % &"
         },
         {
           "id": "l17-e5",
           "type": "pattern",
           "instruction": "Tippe das Muster.",
-          "targetText": "# % *",
-          "targetKeys": [
-            "#",
-            "%",
-            "*",
-            "space"
-          ]
+          "targetText": "# % & * ="
         },
         {
           "id": "l17-e6",
           "type": "pattern",
           "instruction": "Tippe das Muster.",
-          "targetText": "@ # % & § =",
-          "targetKeys": [
-            "@",
-            "space",
-            "#",
-            "%",
-            "&",
-            "§",
-            "="
-          ]
+          "targetText": "@ = § % &"
+        },
+        {
+          "id": "l17-e7",
+          "type": "pattern",
+          "instruction": "Tippe das Muster.",
+          "targetText": "@ % = & §"
         }
       ]
     },
@@ -2068,121 +1454,43 @@
           "id": "l18-e1",
           "type": "pattern",
           "instruction": "Tippe das Muster.",
-          "targetText": "A1 B2 C3",
-          "targetKeys": [
-            "a",
-            "b",
-            "c",
-            "1",
-            "2",
-            "3",
-            "space"
-          ]
+          "targetText": "A1 B2 C3 D4 A1"
         },
         {
           "id": "l18-e2",
           "type": "pattern",
           "instruction": "Tippe das Muster.",
-          "targetText": "Ja/nein - klar.",
-          "targetKeys": [
-            "j",
-            "a",
-            "/",
-            "n",
-            "e",
-            "i",
-            "-",
-            "k",
-            "l",
-            "r",
-            ".",
-            "space"
-          ]
+          "targetText": "A1 B2 asdf jklö C3"
         },
         {
           "id": "l18-e3",
           "type": "pattern",
           "instruction": "Tippe das Muster.",
-          "targetText": "(Q) @ 9",
-          "targetKeys": [
-            "(",
-            "q",
-            ")",
-            "@",
-            "9",
-            "space"
-          ]
+          "targetText": "(Q) @ 9 § A1"
         },
         {
           "id": "l18-e4",
           "type": "pattern",
           "instruction": "Tippe das Muster.",
-          "targetText": "< > = &",
-          "targetKeys": [
-            "<",
-            ">",
-            "=",
-            "&",
-            "space"
-          ]
+          "targetText": "< > = & @"
         },
         {
           "id": "l18-e5",
           "type": "pattern",
           "instruction": "Tippe das Muster.",
-          "targetText": "Mia-2, Ben-3.",
-          "targetKeys": [
-            "m",
-            "i",
-            "a",
-            "-",
-            "2",
-            ",",
-            "space",
-            "b",
-            "e",
-            "n",
-            "3",
-            "."
-          ]
+          "targetText": "M2 B3 Z4 A1 C2"
         },
         {
           "id": "l18-e6",
-          "type": "pattern",
-          "instruction": "Tippe das Muster.",
-          "targetText": "@A = 1",
-          "targetKeys": [
-            "@",
-            "a",
-            "space",
-            "=",
-            "1"
-          ]
+          "type": "real-sentence",
+          "instruction": "Tippe den Satz.",
+          "targetText": "Alles passt. Alles passt gut."
         },
         {
           "id": "l18-e7",
-          "type": "real-sentence",
-          "instruction": "Tippe den Satz.",
-          "targetText": "Heute ist Übungstag, alles klappt.",
-          "targetKeys": [
-            "h",
-            "e",
-            "u",
-            "t",
-            "space",
-            "i",
-            "s",
-            "ü",
-            "b",
-            "n",
-            "g",
-            "a",
-            ",",
-            "l",
-            "k",
-            "p",
-            "."
-          ]
+          "type": "pattern",
+          "instruction": "Tippe das Muster.",
+          "targetText": "A1 C3 asdf jklö B2"
         }
       ]
     },
@@ -2235,163 +1543,43 @@
           "id": "l19-e1",
           "type": "real-sentence",
           "instruction": "Tippe den Satz.",
-          "targetText": "Heute übt die Gruppe ruhig.",
-          "targetKeys": [
-            "h",
-            "e",
-            "u",
-            "t",
-            "b",
-            "d",
-            "i",
-            "g",
-            "r",
-            "p",
-            "o",
-            "s",
-            ".",
-            "space"
-          ]
+          "targetText": "Mia liest ein Buch laut."
         },
         {
           "id": "l19-e2",
           "type": "real-sentence",
           "instruction": "Tippe den Satz.",
-          "targetText": "Mia liest ein Buch, Ben hört zu.",
-          "targetKeys": [
-            "m",
-            "i",
-            "a",
-            "l",
-            "e",
-            "s",
-            "t",
-            "n",
-            "b",
-            "u",
-            "c",
-            "h",
-            ",",
-            "o",
-            "r",
-            "z",
-            ".",
-            "space"
-          ]
+          "targetText": "Ben hört nur kurz zu."
         },
         {
           "id": "l19-e3",
           "type": "real-sentence",
           "instruction": "Tippe den Satz.",
-          "targetText": "Im Garten ist es still und warm.",
-          "targetKeys": [
-            "i",
-            "m",
-            "g",
-            "a",
-            "r",
-            "t",
-            "e",
-            "n",
-            "s",
-            "l",
-            "u",
-            "d",
-            "w",
-            ".",
-            "space"
-          ]
+          "targetText": "Im Garten ist Ruhe heute."
         },
         {
           "id": "l19-e4",
           "type": "real-sentence",
           "instruction": "Tippe den Satz.",
-          "targetText": "Vera fragt: Kommt ihr später?",
-          "targetKeys": [
-            "v",
-            "e",
-            "r",
-            "a",
-            "f",
-            "g",
-            "t",
-            ":",
-            "k",
-            "o",
-            "m",
-            "i",
-            "u",
-            "s",
-            "p",
-            "?",
-            "space"
-          ]
+          "targetText": "Vera fragt: Kommt ihr heute?"
         },
         {
           "id": "l19-e5",
           "type": "real-sentence",
           "instruction": "Tippe den Satz.",
-          "targetText": "Ja, wir machen weiter!",
-          "targetKeys": [
-            "j",
-            "a",
-            ",",
-            "w",
-            "i",
-            "r",
-            "m",
-            "c",
-            "h",
-            "e",
-            "t",
-            "!",
-            "space"
-          ]
+          "targetText": "Ja, wir machen heute weiter."
         },
         {
           "id": "l19-e6",
           "type": "real-sentence",
           "instruction": "Tippe den Satz.",
-          "targetText": "Die Klasse tippt leise und sicher.",
-          "targetKeys": [
-            "d",
-            "i",
-            "e",
-            "space",
-            "k",
-            "l",
-            "a",
-            "s",
-            "t",
-            "p",
-            "u",
-            "n",
-            "c",
-            "h",
-            "r",
-            "."
-          ]
+          "targetText": "Am Ende passt alles gut."
         },
         {
           "id": "l19-e7",
           "type": "real-sentence",
           "instruction": "Tippe den Satz.",
-          "targetText": "Am Ende sagen alle: Das passt.",
-          "targetKeys": [
-            "a",
-            "m",
-            "space",
-            "e",
-            "n",
-            "d",
-            "s",
-            "g",
-            "l",
-            ":",
-            "p",
-            "t",
-            "."
-          ]
+          "targetText": "Zora übt ruhig weiter heute."
         }
       ]
     }

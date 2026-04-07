@@ -1,7 +1,7 @@
 # CalmType
 
 CalmType is a fully client-side typing trainer designed for autistic children.
-It focuses on emotional safety, predictable flow, and meaningful language instead of scores, penalties, or pressure.
+It focuses on emotional safety, predictable flow, and low-friction motor learning instead of scores, penalties, or pressure.
 
 ## Why CalmType
 
@@ -17,12 +17,15 @@ It focuses on emotional safety, predictable flow, and meaningful language instea
 - No scores or penalties
 - No red error states and no "wrong" feedback
 - No fake sentences or random word chains
+- No mixing of chunks and real words in the same exercise
 - Calm visual design, short instructions, no flashing
 
 ## Features
 
 - Lesson flow with intro, guided exercises, pause, and completion screens
-- Exercise types: single key, patterns, real words, and real sentences
+- Exercise types: single key, chunk patterns, real words, and real sentences
+- Lessons use a stable `7`-exercise rhythm with the last `2` exercises focused on broad review
+- Each exercise uses exactly `5` words or `5` chunks for predictable pacing
 - Input modes:
   - `ignore` (default)
   - `gentle-hint` (calm guidance on mismatch)
@@ -88,3 +91,7 @@ There is no backend, no account system, and no cloud sync in the MVP.
 - Lessons are stored in `src/content/lessons.de.json`
 - Language is German (`de`)
 - Keyboard layout is Swiss German QWERTZ (`ch-qwertz`)
+- Pattern exercises are chunk-only
+- Real-word exercises are word-only
+- Real-sentence exercises are sentence-only
+- Early lessons may use meaningful chunks when real words are not yet practical

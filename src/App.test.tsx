@@ -15,6 +15,13 @@ describe('App gentle input mode', () => {
     localStorage.clear();
   });
 
+  function findKeyTargetLine() {
+    return screen.getByText((_, element) => {
+      return element?.tagName.toLowerCase() === 'p' &&
+        (element.textContent ?? '').includes(`${uiText.exercise.keyTarget}:`);
+    });
+  }
+
   it('keeps the same target and shows calm guidance on wrong key', async () => {
     const user = userEvent.setup();
     render(<App />);
@@ -26,16 +33,17 @@ describe('App gentle input mode', () => {
     await user.click(screen.getAllByRole('button', { name: uiText.lessonList.start })[0]);
     await user.click(screen.getByRole('button', { name: uiText.practiceIntro.start }));
 
-    expect(screen.getByText('Drücke A.')).toBeInTheDocument();
+    expect(screen.getByText('Tippe das Muster.')).toBeInTheDocument();
+    expect(findKeyTargetLine()).toHaveTextContent('a');
 
     fireEvent.keyDown(window, { key: 'g' });
 
-    expect(screen.getByText('Drücke A.')).toBeInTheDocument();
+    expect(findKeyTargetLine()).toHaveTextContent('a');
     expect(screen.getByText(uiText.exercise.hintTryKey)).toBeInTheDocument();
 
     fireEvent.keyDown(window, { key: 'a' });
 
-    expect(screen.getByText('Drücke Ö.')).toBeInTheDocument();
+    expect(findKeyTargetLine()).toHaveTextContent('s');
     expect(screen.queryByText(uiText.exercise.hintTryKey)).not.toBeInTheDocument();
   });
 
@@ -56,14 +64,15 @@ describe('App gentle input mode', () => {
     await user.click(screen.getByRole('button', { name: uiText.home.continue }));
     await user.click(screen.getByRole('button', { name: uiText.practiceIntro.start }));
 
-    expect(screen.getByText('Drücke das Fragezeichen.')).toBeInTheDocument();
+    expect(screen.getByText('Tippe das Muster.')).toBeInTheDocument();
+    expect(screen.getByText(/1\/7/)).toBeInTheDocument();
 
-    fireEvent.keyDown(window, { key: '?' });
-    expect(screen.getByText('Drücke Q.')).toBeInTheDocument();
+    typeText('quel qual qua que quo');
+    expect(screen.getByText(/2\/7/)).toBeInTheDocument();
 
-    fireEvent.keyDown(window, { key: 'q' });
-    expect(screen.getByText('Tippe das Wort.')).toBeInTheDocument();
-    expect(screen.getByText(/3\/6/)).toBeInTheDocument();
+    typeText('qua? quel? quo? qua? quel?');
+    expect(screen.getByText('Tippe die Wörter.')).toBeInTheDocument();
+    expect(screen.getByText(/3\/7/)).toBeInTheDocument();
   });
 
   it('progresses through multiple sentence exercises in final sentence lesson', async () => {
@@ -84,7 +93,7 @@ describe('App gentle input mode', () => {
     await user.click(screen.getByRole('button', { name: uiText.practiceIntro.start }));
 
     expect(screen.getByText(/1\/7/)).toBeInTheDocument();
-    typeText('Heute übt die Gruppe ruhig.');
+    typeText('Mia liest ein Buch laut.');
 
     expect(screen.getByText(/2\/7/)).toBeInTheDocument();
     expect(screen.queryByRole('heading', { name: 'Sätze' })).not.toBeInTheDocument();
@@ -107,18 +116,13 @@ describe('App gentle input mode', () => {
     await user.click(screen.getByRole('button', { name: uiText.home.continue }));
     await user.click(screen.getByRole('button', { name: uiText.practiceIntro.start }));
 
-    const findKeyTargetLine = () => screen.getByText((_, element) => {
-      return element?.tagName.toLowerCase() === 'p' &&
-        (element.textContent ?? '').includes(`${uiText.exercise.keyTarget}:`);
-    });
-
-    expect(findKeyTargetLine()).toHaveTextContent('A');
+    expect(findKeyTargetLine()).toHaveTextContent('N');
 
     fireEvent.keyDown(window, { key: 'a' });
-    expect(findKeyTargetLine()).toHaveTextContent('A');
+    expect(findKeyTargetLine()).toHaveTextContent('N');
 
-    fireEvent.keyDown(window, { key: 'A' });
-    expect(findKeyTargetLine()).toHaveTextContent('S');
+    fireEvent.keyDown(window, { key: 'N' });
+    expect(findKeyTargetLine()).toHaveTextContent('a');
   });
 
   it('does not accept uppercase input when lowercase is expected', async () => {
@@ -129,18 +133,13 @@ describe('App gentle input mode', () => {
     await user.click(screen.getAllByRole('button', { name: uiText.lessonList.start })[0]);
     await user.click(screen.getByRole('button', { name: uiText.practiceIntro.start }));
 
-    const findKeyTargetLine = () => screen.getByText((_, element) => {
-      return element?.tagName.toLowerCase() === 'p' &&
-        (element.textContent ?? '').includes(`${uiText.exercise.keyTarget}:`);
-    });
-
     expect(findKeyTargetLine()).toHaveTextContent('a');
 
     fireEvent.keyDown(window, { key: 'A' });
     expect(findKeyTargetLine()).toHaveTextContent('a');
 
     fireEvent.keyDown(window, { key: 'a' });
-    expect(findKeyTargetLine()).toHaveTextContent('ö');
+    expect(findKeyTargetLine()).toHaveTextContent('s');
   });
 
   it('requires compose sequence for uppercase umlauts', async () => {
@@ -160,11 +159,6 @@ describe('App gentle input mode', () => {
     await user.click(screen.getByRole('button', { name: uiText.home.continue }));
     await user.click(screen.getByRole('button', { name: uiText.practiceIntro.start }));
 
-    const findKeyTargetLine = () => screen.getByText((_, element) => {
-      return element?.tagName.toLowerCase() === 'p' &&
-        (element.textContent ?? '').includes(`${uiText.exercise.keyTarget}:`);
-    });
-
     expect(findKeyTargetLine()).toHaveTextContent('Ü');
 
     fireEvent.keyDown(window, { key: 'Ü' });
@@ -177,6 +171,9 @@ describe('App gentle input mode', () => {
     expect(findKeyTargetLine()).toHaveTextContent('Ü');
 
     fireEvent.keyDown(window, { key: 'U' });
+    expect(findKeyTargetLine()).toHaveTextContent('␣');
+
+    fireEvent.keyDown(window, { key: ' ' });
     expect(findKeyTargetLine()).toHaveTextContent('Ä');
   });
 });

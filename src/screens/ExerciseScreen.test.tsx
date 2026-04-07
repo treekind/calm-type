@@ -18,7 +18,6 @@ const lesson: Lesson = {
       type: "single-key",
       instruction: "Drücke F.",
       targetText: "f",
-      targetKeys: ["f"],
     },
   ],
 };

@@ -9,7 +9,7 @@ The system prioritizes:
 - emotional safety
 - predictability
 - zero punishment
-- meaningful language
+- meaningful teaching structure
 
 ## Critical Rules
 
@@ -46,7 +46,7 @@ The system prioritizes:
 ### Exercise Types
 
 - single-key
-- pattern
+- pattern (chunk-only)
 - real-word
 - real-sentence
 
@@ -105,11 +105,12 @@ localStorage keys:
 Each lesson:
 
 1. intro
-2. key practice
-3. patterns
-4. words
-5. sentences (optional)
-6. completion
+2. 7 exercises
+3. early exercises introduce and vary the new keys with chunks
+4. middle exercises use real words when practical
+5. sentences are optional and only used when they are real and natural
+6. the last 2 exercises are broad review with previously learned keys
+7. completion
 
 ---
 
@@ -117,6 +118,7 @@ Each lesson:
 
 Allowed:
 
+- meaningful chunks for motor learning
 - real German words
 - real sentences
 
@@ -124,12 +126,31 @@ Forbidden:
 
 - fake sentences
 - random word chains
+- mixing chunks and real words in the same exercise
+- mixing chunks and real sentences in the same exercise
+
+Exercise rules:
+
+- each lesson keeps its key introduction order
+- each lesson has 7 exercises
+- each exercise has exactly 5 words or 5 chunks
+- pattern exercises are chunk-only
+- real-word exercises are word-only
+- real-sentence exercises are sentence-only
+- the last 2 exercises should review as many previously learned keys as practical
 
 ---
 
 ## Sentence Rule
 
 If it looks like a sentence → it must be a real sentence.
+
+If a real word or real sentence is not practical yet, use meaningful chunks that support a clear teaching goal:
+
+- home-row anchors
+- hand alternation
+- new key reach
+- word stems or syllable-like chunks
 
 ---
 

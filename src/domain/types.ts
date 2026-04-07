@@ -11,7 +11,6 @@ export interface Exercise {
   type: ExerciseType;
   instruction: string;
   targetText: string;
-  targetKeys: string[];
 }
 
 export interface Lesson {
