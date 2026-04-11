@@ -62,11 +62,13 @@ export default function SettingsScreen({
         checked={settings.keyboardHints}
         onToggle={() => onChange({ keyboardHints: !settings.keyboardHints })}
       />
-      <ToggleRow
-        label={ui.settings.fingerHints}
-        checked={settings.fingerHints}
-        onToggle={() => onChange({ fingerHints: !settings.fingerHints })}
-      />
+      {settings.keyboardHints ? (
+        <ToggleRow
+          label={ui.settings.fingerHints}
+          checked={settings.fingerHints}
+          onToggle={() => onChange({ fingerHints: !settings.fingerHints })}
+        />
+      ) : null}
       <ToggleRow
         label={ui.settings.sentences}
         checked={settings.sentences}

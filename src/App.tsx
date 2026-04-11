@@ -315,7 +315,13 @@ export default function App() {
   }
 
   function updateSettings(next: Partial<SettingsState>) {
-    setSettings((current) => ({ ...current, ...next }));
+    setSettings((current) => {
+      const merged = { ...current, ...next };
+      if (!merged.keyboardHints) {
+        return { ...merged, fingerHints: false };
+      }
+      return merged;
+    });
   }
 
   function doResetAll() {

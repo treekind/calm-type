@@ -76,4 +76,42 @@ describe("SettingsScreen", () => {
 
     expect(onAskReset).toHaveBeenCalledTimes(1);
   });
+
+  it("shows finger hints toggle when keyboard hints are enabled", () => {
+    render(
+      <SettingsScreen
+        ui={uiText}
+        settings={defaultSettings}
+        confirmReset={false}
+        onBack={vi.fn()}
+        onChange={vi.fn()}
+        onAskReset={vi.fn()}
+        onCancelReset={vi.fn()}
+        onConfirmReset={vi.fn()}
+      />,
+    );
+
+    expect(
+      screen.getByRole("button", { name: uiText.settings.fingerHints }),
+    ).toBeInTheDocument();
+  });
+
+  it("hides finger hints toggle when keyboard hints are disabled", () => {
+    render(
+      <SettingsScreen
+        ui={uiText}
+        settings={{ ...defaultSettings, keyboardHints: false, fingerHints: false }}
+        confirmReset={false}
+        onBack={vi.fn()}
+        onChange={vi.fn()}
+        onAskReset={vi.fn()}
+        onCancelReset={vi.fn()}
+        onConfirmReset={vi.fn()}
+      />,
+    );
+
+    expect(
+      screen.queryByRole("button", { name: uiText.settings.fingerHints }),
+    ).not.toBeInTheDocument();
+  });
 });

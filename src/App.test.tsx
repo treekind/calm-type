@@ -1,4 +1,4 @@
-import { fireEvent, render, screen } from '@testing-library/react';
+import { fireEvent, render, screen, waitFor } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { beforeEach, describe, expect, it } from 'vitest';
 import App from './App';
@@ -175,5 +175,27 @@ describe('App gentle input mode', () => {
 
     fireEvent.keyDown(window, { key: ' ' });
     expect(findKeyTargetLine()).toHaveTextContent('Ä');
+  });
+
+  it('forces finger hints off when keyboard hints are disabled', async () => {
+    const user = userEvent.setup();
+    render(<App />);
+
+    await user.click(screen.getByRole('button', { name: uiText.home.settings }));
+    await user.click(screen.getByRole('button', { name: uiText.settings.fingerHints }));
+    await user.click(screen.getByRole('button', { name: uiText.settings.keyboardHints }));
+
+    expect(
+      screen.queryByRole('button', { name: uiText.settings.fingerHints }),
+    ).not.toBeInTheDocument();
+
+    await waitFor(() => {
+      const stored = localStorage.getItem('calmtype.settings');
+      expect(stored).not.toBeNull();
+      expect(JSON.parse(stored ?? '{}')).toMatchObject({
+        keyboardHints: false,
+        fingerHints: false,
+      });
+    });
   });
 });
