@@ -20,7 +20,7 @@ The system prioritizes:
 5. No fake sentences
 6. All UI and lessons in German
 7. Code and architecture in English
-8. German QWERTZ keyboard
+8. Swiss-German QWERTZ keyboard
 
 ---
 

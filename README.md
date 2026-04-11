@@ -16,7 +16,7 @@ It focuses on emotional safety, predictable flow, and low-friction motor learnin
 - No gamification
 - No scores or penalties
 - No red error states and no "wrong" feedback
-- No fake sentences or random word chains
+- No fake sentences
 - No mixing of chunks and real words in the same exercise
 - Calm visual design, short instructions, no flashing
 
@@ -29,7 +29,7 @@ It focuses on emotional safety, predictable flow, and low-friction motor learnin
 - Input modes:
   - `ignore` (default)
   - `gentle-hint` (calm guidance on mismatch)
-- Optional keyboard and finger hints using a DE-QWERTZ layout
+- Optional keyboard and finger hints using a Swiss-German QWERTZ layout
 - High-contrast mode for accessibility
 - Progress and settings persisted in `localStorage`
 
