@@ -5,8 +5,12 @@ import Panel from "../components/Panel";
 interface SettingsScreenProps {
   ui: UiText;
   settings: SettingsState;
+  confirmReset: boolean;
   onBack: () => void;
   onChange: (next: Partial<SettingsState>) => void;
+  onAskReset: () => void;
+  onCancelReset: () => void;
+  onConfirmReset: () => void;
 }
 
 interface ToggleRowProps {
@@ -44,8 +48,12 @@ function ToggleRow({ label, checked, onToggle }: ToggleRowProps) {
 export default function SettingsScreen({
   ui,
   settings,
+  confirmReset,
   onBack,
   onChange,
+  onAskReset,
+  onCancelReset,
+  onConfirmReset,
 }: SettingsScreenProps) {
   return (
     <div className="mx-auto grid max-w-2xl gap-3">
@@ -100,6 +108,26 @@ export default function SettingsScreen({
             {ui.settings.inputGentle}
           </button>
         </div>
+      </Panel>
+
+      <Panel tone="soft">
+        <p className="text-lg">{ui.reset.title}</p>
+
+        {!confirmReset ? (
+          <Button className="mt-4" onClick={onAskReset}>
+            {ui.reset.reset}
+          </Button>
+        ) : (
+          <div className="mt-4 space-y-3">
+            <p>{ui.reset.resetConfirm}</p>
+            <div className="flex flex-wrap gap-2">
+              <Button variant="primary" onClick={onConfirmReset}>
+                {ui.common.yes}
+              </Button>
+              <Button onClick={onCancelReset}>{ui.common.no}</Button>
+            </div>
+          </div>
+        )}
       </Panel>
 
       <Button variant="primary" block className="text-lg " onClick={onBack}>

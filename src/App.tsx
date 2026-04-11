@@ -25,7 +25,6 @@ import {
   writeProgress,
   writeSettings,
 } from "./lib/storage";
-import AdultPanelScreen from "./screens/AdultPanelScreen";
 import CompletionScreen from "./screens/CompletionScreen";
 import ExerciseScreen from "./screens/ExerciseScreen";
 import HomeScreen from "./screens/HomeScreen";
@@ -339,7 +338,6 @@ export default function App() {
       onContinue={continueFromHome}
       onLessons={() => setScreen({ name: "lessons" })}
       onSettings={() => setScreen({ name: "settings" })}
-      onAdult={() => setScreen({ name: "adult" })}
     />
   );
 
@@ -440,23 +438,12 @@ export default function App() {
       <SettingsScreen
         ui={uiText}
         settings={settings}
-        onBack={() => setScreen({ name: "home" })}
-        onChange={updateSettings}
-      />
-    );
-  }
-
-  if (screen.name === "adult") {
-    title = uiText.adult.title;
-    subtitle = uiText.app.subtitle;
-    content = (
-      <AdultPanelScreen
-        ui={uiText}
         confirmReset={confirmReset}
         onBack={() => {
           setConfirmReset(false);
           setScreen({ name: "home" });
         }}
+        onChange={updateSettings}
         onAskReset={() => setConfirmReset(true)}
         onCancelReset={() => setConfirmReset(false)}
         onConfirmReset={doResetAll}

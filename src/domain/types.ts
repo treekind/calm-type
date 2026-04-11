@@ -113,7 +113,7 @@ export interface UiText {
     inputIgnore: string;
     inputGentle: string;
   };
-  adult: {
+  reset: {
     title: string;
     reset: string;
     resetConfirm: string;

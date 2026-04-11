@@ -7,7 +7,6 @@ interface HomeScreenProps {
   onContinue: () => void;
   onLessons: () => void;
   onSettings: () => void;
-  onAdult: () => void;
 }
 
 export default function HomeScreen({
@@ -16,7 +15,6 @@ export default function HomeScreen({
   onContinue,
   onLessons,
   onSettings,
-  onAdult,
 }: HomeScreenProps) {
   return (
     <div className="mx-auto grid max-w-xl gap-3">
@@ -28,9 +26,6 @@ export default function HomeScreen({
       </Button>
       <Button block className="justify-start text-lg" onClick={onSettings}>
         {ui.home.settings}
-      </Button>
-      <Button block className="justify-start text-lg" onClick={onAdult}>
-        {ui.home.adult}
       </Button>
       {!hasProgress ? (
         <p className="pt-3 text-center text-sm text-(--ink-soft)">

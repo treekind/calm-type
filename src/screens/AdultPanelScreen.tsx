@@ -21,27 +21,29 @@ export default function AdultPanelScreen({
 }: AdultPanelScreenProps) {
   return (
     <div className="mx-auto grid max-w-2xl gap-4">
-      <Button variant="ghost" className="w-fit px-3 py-2 text-sm" onClick={onBack}>
+      <Button
+        variant="ghost"
+        className="w-fit px-3 py-2 text-sm"
+        onClick={onBack}
+      >
         {ui.common.back}
       </Button>
 
       <Panel tone="soft">
-        <p className="text-(--ink-soft)">{ui.adult.resetDescription}</p>
+        <p className="text-(--ink-soft)">{ui.reset.resetDescription}</p>
 
         {!confirmReset ? (
           <Button variant="primary" className="mt-4" onClick={onAskReset}>
-            {ui.adult.reset}
+            {ui.reset.reset}
           </Button>
         ) : (
           <div className="mt-4 space-y-3">
-            <p>{ui.adult.resetConfirm}</p>
+            <p>{ui.reset.resetConfirm}</p>
             <div className="flex flex-wrap gap-2">
               <Button variant="primary" onClick={onConfirmReset}>
                 {ui.common.yes}
               </Button>
-              <Button onClick={onCancelReset}>
-                {ui.common.no}
-              </Button>
+              <Button onClick={onCancelReset}>{ui.common.no}</Button>
             </div>
           </div>
         )}

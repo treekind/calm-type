@@ -8,7 +8,6 @@
     "home": "Startseite",
     "lessons": "Lektionen",
     "settings": "Einstellungen",
-    "adult": "Bereich für Erwachsene",
     "start": "Start",
     "continue": "Weiter",
     "close": "Schließen",
@@ -20,7 +19,6 @@
     "continue": "Weiter",
     "lessons": "Lektionen",
     "settings": "Einstellungen",
-    "adult": "Bereich für Erwachsene",
     "noProgress": "Du kannst mit der ersten Lektion beginnen."
   },
   "lessonList": {
@@ -68,10 +66,9 @@
     "inputIgnore": "Ignorieren",
     "inputGentle": "Sanfter Hinweis"
   },
-  "adult": {
-    "title": "Bereich für Erwachsene",
+  "reset": {
+    "title": "Fortschritt zurücksetzen?",
     "reset": "Fortschritt zurücksetzen",
-    "resetConfirm": "Möchtest du den gespeicherten Stand wirklich zurücksetzen?",
-    "resetDescription": "Dieser Bereich ist für Betreuungspersonen."
+    "resetConfirm": "Möchtest du den gespeicherten Stand wirklich zurücksetzen?"
   }
 }

@@ -13,14 +13,12 @@ describe('HomeScreen', () => {
         onContinue={vi.fn()}
         onLessons={vi.fn()}
         onSettings={vi.fn()}
-        onAdult={vi.fn()}
       />,
     );
 
     expect(screen.getByRole('button', { name: uiText.home.continue })).toBeInTheDocument();
     expect(screen.getByRole('button', { name: uiText.home.lessons })).toBeInTheDocument();
     expect(screen.getByRole('button', { name: uiText.home.settings })).toBeInTheDocument();
-    expect(screen.getByRole('button', { name: uiText.home.adult })).toBeInTheDocument();
     expect(screen.getByText(uiText.home.noProgress)).toBeInTheDocument();
   });
 
@@ -29,7 +27,6 @@ describe('HomeScreen', () => {
     const onContinue = vi.fn();
     const onLessons = vi.fn();
     const onSettings = vi.fn();
-    const onAdult = vi.fn();
 
     render(
       <HomeScreen
@@ -38,19 +35,16 @@ describe('HomeScreen', () => {
         onContinue={onContinue}
         onLessons={onLessons}
         onSettings={onSettings}
-        onAdult={onAdult}
       />,
     );
 
     await user.click(screen.getByRole('button', { name: uiText.home.continue }));
     await user.click(screen.getByRole('button', { name: uiText.home.lessons }));
     await user.click(screen.getByRole('button', { name: uiText.home.settings }));
-    await user.click(screen.getByRole('button', { name: uiText.home.adult }));
 
     expect(onContinue).toHaveBeenCalledTimes(1);
     expect(onLessons).toHaveBeenCalledTimes(1);
     expect(onSettings).toHaveBeenCalledTimes(1);
-    expect(onAdult).toHaveBeenCalledTimes(1);
     expect(screen.queryByText(uiText.home.noProgress)).not.toBeInTheDocument();
   });
 });
