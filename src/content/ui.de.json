@@ -5,17 +5,11 @@
   },
   "common": {
     "back": "Zurück",
-    "home": "Startseite",
-    "lessons": "Lektionen",
-    "settings": "Einstellungen",
     "start": "Start",
-    "continue": "Weiter",
-    "close": "Schließen",
     "yes": "Ja",
     "no": "Nein"
   },
   "home": {
-    "title": "Startseite",
     "continue": "Weiter",
     "lessons": "Lektionen",
     "settings": "Einstellungen"

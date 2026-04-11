@@ -53,7 +53,6 @@ export interface UiText {
     home: string;
     lessons: string;
     settings: string;
-    adult: string;
     start: string;
     continue: string;
     close: string;
@@ -65,8 +64,6 @@ export interface UiText {
     continue: string;
     lessons: string;
     settings: string;
-    adult: string;
-    noProgress: string;
   };
   lessonList: {
     title: string;
@@ -117,7 +114,6 @@ export interface UiText {
     title: string;
     reset: string;
     resetConfirm: string;
-    resetDescription: string;
   };
 }
 
@@ -128,5 +124,4 @@ export type Screen =
   | { name: "exercise"; lessonId: string }
   | { name: "pause"; lessonId: string }
   | { name: "complete"; lessonId: string }
-  | { name: "settings" }
-  | { name: "adult" };
+  | { name: "settings" };
