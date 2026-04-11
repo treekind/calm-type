@@ -18,8 +18,13 @@ export default function HomeScreen({
 }: HomeScreenProps) {
   return (
     <div className="mx-auto grid max-w-xl gap-3">
-      <Button variant="primary" block className="justify-start text-lg" onClick={onContinue}>
-        {ui.home.continue}
+      <Button
+        variant="primary"
+        block
+        className="justify-start text-lg"
+        onClick={onContinue}
+      >
+        {hasProgress ? ui.home.continue : ui.common.start}
       </Button>
       <Button block className="justify-start text-lg" onClick={onLessons}>
         {ui.home.lessons}
@@ -27,11 +32,6 @@ export default function HomeScreen({
       <Button block className="justify-start text-lg" onClick={onSettings}>
         {ui.home.settings}
       </Button>
-      {!hasProgress ? (
-        <p className="pt-3 text-center text-sm text-(--ink-soft)">
-          {ui.home.noProgress}
-        </p>
-      ) : null}
     </div>
   );
 }

@@ -5,7 +5,7 @@ import { uiText } from '../lib/content';
 import HomeScreen from './HomeScreen';
 
 describe('HomeScreen', () => {
-  it('renders German actions and no-progress hint', () => {
+  it('renders Start action for first launch', () => {
     render(
       <HomeScreen
         ui={uiText}
@@ -16,13 +16,12 @@ describe('HomeScreen', () => {
       />,
     );
 
-    expect(screen.getByRole('button', { name: uiText.home.continue })).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: uiText.common.start })).toBeInTheDocument();
     expect(screen.getByRole('button', { name: uiText.home.lessons })).toBeInTheDocument();
     expect(screen.getByRole('button', { name: uiText.home.settings })).toBeInTheDocument();
-    expect(screen.getByText(uiText.home.noProgress)).toBeInTheDocument();
   });
 
-  it('calls callbacks when actions are clicked', async () => {
+  it('renders Weiter and calls callbacks when progress exists', async () => {
     const user = userEvent.setup();
     const onContinue = vi.fn();
     const onLessons = vi.fn();
@@ -45,6 +44,5 @@ describe('HomeScreen', () => {
     expect(onContinue).toHaveBeenCalledTimes(1);
     expect(onLessons).toHaveBeenCalledTimes(1);
     expect(onSettings).toHaveBeenCalledTimes(1);
-    expect(screen.queryByText(uiText.home.noProgress)).not.toBeInTheDocument();
   });
 });
