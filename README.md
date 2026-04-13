@@ -84,14 +84,3 @@ CalmType stores app state locally in the browser only:
 - `calmtype.progress`
 
 There is no backend, no account system, and no cloud sync in the MVP.
-
-## Content and Language
-
-- UI text is stored in `src/content/ui.de.json`
-- Lessons are stored in `src/content/lessons.de.json`
-- Language is German (`de`)
-- Keyboard layout is Swiss German QWERTZ (`ch-qwertz`)
-- Pattern exercises are chunk-only
-- Real-word exercises are word-only
-- Real-sentence exercises are sentence-only
-- Early lessons may use meaningful chunks when real words are not yet practical
