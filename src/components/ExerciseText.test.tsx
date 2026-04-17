@@ -10,4 +10,12 @@ describe('ExerciseText', () => {
     expect(activeChar).toHaveClass('bg-(--char-active-bg)');
     expect(activeChar).toHaveClass('font-semibold');
   });
+
+  it('shows enter token as the last step', () => {
+    render(<ExerciseText targetText="haus" charIndex={4} />);
+
+    const enterToken = screen.getByText('↵');
+    expect(enterToken).toHaveClass('bg-(--char-active-bg)');
+    expect(enterToken).toHaveClass('font-semibold');
+  });
 });

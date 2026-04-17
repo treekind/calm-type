@@ -3,6 +3,7 @@ import KeyboardQwertz from "../components/KeyboardQwertz";
 import Button from "../components/Button";
 import Panel from "../components/Panel";
 import type { Exercise, Lesson, SettingsState, UiText } from "../domain/types";
+import { formatTargetKeyLabel } from "../lib/keyboard";
 
 interface ExerciseScreenProps {
   ui: UiText;
@@ -50,9 +51,7 @@ export default function ExerciseScreen({
       <Panel className="grid gap-2">
         <p className="text-sm text-(--ink-soft)">
           {ui.exercise.keyTarget}:{" "}
-          <span className="font-medium text-(--ink)">
-            {targetKey === "space" ? "␣" : targetKey}
-          </span>
+          <span className="font-medium text-(--ink)">{formatTargetKeyLabel(targetKey)}</span>
         </p>
         {hintMessage ? (
           <p className="text-sm text-(--ink-soft)">{hintMessage}</p>

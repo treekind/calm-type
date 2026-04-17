@@ -24,6 +24,7 @@ export default function KeyboardQwertz({
   const effectiveShowHints = showHints || hintLevel >= 1;
   const effectiveShowFingers = showFingers || hintLevel >= 2;
   const hintTargets = getKeyboardHintTargets(targetKey);
+  const isEnterTarget = targetKey === "enter";
   const shiftSide = getRecommendedShiftSide(targetKey);
 
   if (!effectiveShowHints) {
@@ -119,7 +120,15 @@ export default function KeyboardQwertz({
             </div>
           ) : null}
           {rowIndex === 2 ? (
-            <div className="flex h-10 w-16 items-center justify-center rounded-lg border border-(--line) bg-(--panel) text-xs text-(--ink-soft) md:h-11 md:w-20 md:text-sm">
+            <div
+              className={[
+                "flex h-10 w-16 items-center justify-center rounded-lg border text-xs md:h-11 md:w-20 md:text-sm",
+                isEnterTarget
+                  ? "border-(--accent) bg-(--accent-soft) text-(--ink)"
+                  : "border-(--line) bg-(--panel) text-(--ink-soft)",
+                hintLevel >= 3 && isEnterTarget ? "animate-gentle-key-pulse" : "",
+              ].join(" ")}
+            >
               Enter
             </div>
           ) : null}

@@ -68,9 +68,15 @@ describe('App gentle input mode', () => {
     expect(screen.getByText(/1\/5/)).toBeInTheDocument();
 
     typeText('quel qual qua que quo');
+    expect(screen.getByText(/1\/5/)).toBeInTheDocument();
+
+    fireEvent.keyDown(window, { key: 'Enter' });
     expect(screen.getByText(/2\/5/)).toBeInTheDocument();
 
     typeText('qua? quel? quo? qua? quel?');
+    expect(screen.getByText(/2\/5/)).toBeInTheDocument();
+
+    fireEvent.keyDown(window, { key: 'Enter' });
     expect(screen.getByText('Tippe die Wörter.')).toBeInTheDocument();
     expect(screen.getByText(/3\/5/)).toBeInTheDocument();
   });
@@ -94,6 +100,9 @@ describe('App gentle input mode', () => {
 
     expect(screen.getByText(/1\/5/)).toBeInTheDocument();
     typeText('Mia liest ein Buch laut.');
+    expect(screen.getByText(/1\/5/)).toBeInTheDocument();
+
+    fireEvent.keyDown(window, { key: 'Enter' });
 
     expect(screen.getByText(/2\/5/)).toBeInTheDocument();
     expect(screen.queryByRole('heading', { name: 'Sätze' })).not.toBeInTheDocument();

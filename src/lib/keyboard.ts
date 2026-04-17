@@ -71,6 +71,13 @@ const DISPLAY_LABELS: Record<string, string> = {
   space: "␣",
 };
 
+export function formatTargetKeyLabel(targetKey: string): string {
+  if (targetKey === "enter") {
+    return "Enter";
+  }
+  return DISPLAY_LABELS[targetKey] ?? targetKey;
+}
+
 export function keyDisplayLabel(key: KeyboardKey): string {
   return DISPLAY_LABELS[key.id] ?? key.base;
 }

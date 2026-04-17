@@ -111,4 +111,30 @@ describe("ExerciseScreen", () => {
 
     expect(screen.getByText(uiText.exercise.hintTryKey)).toBeInTheDocument();
   });
+
+  it("shows Enter as target label on the final step", () => {
+    render(
+      <ExerciseScreen
+        ui={uiText}
+        lesson={lesson}
+        exercise={lesson.exercises[0]}
+        exerciseIndex={0}
+        charIndex={1}
+        settings={defaultSettings}
+        targetKey="enter"
+        hintLevel={0}
+        hintMessage={null}
+        onPause={vi.fn()}
+        onRepeat={vi.fn()}
+        onSkip={vi.fn()}
+      />,
+    );
+
+    const keyTargetLine = screen.getByText((_, element) => {
+      return element?.tagName.toLowerCase() === "p" &&
+        (element.textContent ?? "").includes(`${uiText.exercise.keyTarget}: Enter`);
+    });
+
+    expect(keyTargetLine).toBeInTheDocument();
+  });
 });

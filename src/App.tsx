@@ -16,6 +16,7 @@ import {
   getInputStepsForTarget,
   matchesInputStep,
 } from "./lib/keyboard";
+import { getLastStepIndex, getStepAt } from "./lib/exerciseSteps";
 import {
   defaultProgress,
   defaultSettings,
@@ -50,12 +51,74 @@ function applySentenceFilter(
   return exercises.filter((exercise) => exercise.type !== "real-sentence");
 }
 
-function getExpectedKey(targetText: string, charIndex: number): string {
-  const char = targetText[charIndex] ?? "";
-  if (char === " ") {
-    return "space";
+interface AdvanceOutcome {
+  nextProgress: ProgressState;
+  completeLesson: boolean;
+}
+
+function getAdvanceOutcome(
+  progress: ProgressState,
+  lastStepIndex: number,
+  activeExercisesLength: number,
+  lessonId: string,
+): AdvanceOutcome {
+  const nextCharIndex = progress.currentCharIndex + 1;
+  if (nextCharIndex <= lastStepIndex) {
+    return {
+      nextProgress: {
+        ...progress,
+        currentCharIndex: nextCharIndex,
+      },
+      completeLesson: false,
+    };
   }
-  return char;
+
+  const nextExerciseIndex = progress.currentExerciseIndex + 1;
+  if (nextExerciseIndex < activeExercisesLength) {
+    return {
+      nextProgress: {
+        ...progress,
+        currentExerciseIndex: nextExerciseIndex,
+        currentCharIndex: 0,
+      },
+      completeLesson: false,
+    };
+  }
+
+  const done = new Set(progress.completedLessonIds);
+  done.add(lessonId);
+  return {
+    nextProgress: {
+      ...progress,
+      completedLessonIds: Array.from(done),
+      currentLessonId: getNextLessonId(lessonId),
+      currentExerciseIndex: 0,
+      currentCharIndex: 0,
+    },
+    completeLesson: true,
+  };
+}
+
+type CharStepResult = "mismatch" | "await-compose" | "accepted";
+
+function evaluateCharStepInput(
+  expectedChar: string,
+  pressedKey: string,
+  composeStepPending: boolean,
+): CharStepResult {
+  const steps = getInputStepsForTarget(expectedChar);
+  const stepIndex = composeStepPending ? 1 : 0;
+  const activeStep = steps[stepIndex] ?? steps[0];
+
+  if (!matchesInputStep(activeStep, pressedKey)) {
+    return "mismatch";
+  }
+
+  if (steps.length > 1 && stepIndex === 0) {
+    return "await-compose";
+  }
+
+  return "accepted";
 }
 
 export default function App() {
@@ -121,51 +184,47 @@ export default function App() {
       return;
     }
 
+    const lessonId = screen.lessonId;
+
     const handleKeyDown = (event: KeyboardEvent) => {
-      const expectedChar = activeExercise.targetText[progress.currentCharIndex] ?? "";
-      if (!expectedChar) {
+      const lastStepIndex = getLastStepIndex(activeExercise.targetText);
+      const step = getStepAt(activeExercise.targetText, progress.currentCharIndex);
+
+      if (!step) {
         return;
       }
 
       const advanceProgress = () => {
-        const nextCharIndex = progress.currentCharIndex + 1;
-        if (nextCharIndex < activeExercise.targetText.length) {
-          setProgress((current) => ({
-            ...current,
-            currentCharIndex: nextCharIndex,
-          }));
-          return;
+        const outcome = getAdvanceOutcome(
+          progress,
+          lastStepIndex,
+          activeExercises.length,
+          lessonId,
+        );
+        setProgress(outcome.nextProgress);
+        if (outcome.completeLesson) {
+          setScreen({ name: "complete", lessonId });
         }
-
-        const nextExerciseIndex = progress.currentExerciseIndex + 1;
-        if (nextExerciseIndex < activeExercises.length) {
-          setProgress((current) => ({
-            ...current,
-            currentExerciseIndex: nextExerciseIndex,
-            currentCharIndex: 0,
-          }));
-          return;
-        }
-
-        const lessonId = screen.lessonId;
-        const done = new Set(progress.completedLessonIds);
-        done.add(lessonId);
-        const nextLessonId = getNextLessonId(lessonId);
-        setProgress((current) => ({
-          ...current,
-          completedLessonIds: Array.from(done),
-          currentLessonId: nextLessonId,
-          currentExerciseIndex: 0,
-          currentCharIndex: 0,
-        }));
-        setScreen({ name: "complete", lessonId });
       };
 
-      const steps = getInputStepsForTarget(expectedChar);
-      const stepIndex = composeStepPending ? 1 : 0;
-      const activeStep = steps[stepIndex] ?? steps[0];
+      if (step.kind === "enter") {
+        if (event.key !== "Enter") {
+          return;
+        }
 
-      if (!matchesInputStep(activeStep, event.key)) {
+        event.preventDefault();
+        setHintLevel(0);
+        advanceProgress();
+        return;
+      }
+
+      const charStepResult = evaluateCharStepInput(
+        step.char,
+        event.key,
+        composeStepPending,
+      );
+
+      if (charStepResult === "mismatch") {
         if (settings.inputMode === "gentle-hint") {
           setHintLevel((current) => (current === 0 ? 2 : Math.min(3, current + 1)));
         }
@@ -175,7 +234,7 @@ export default function App() {
       event.preventDefault();
       setHintLevel(0);
 
-      if (steps.length > 1 && stepIndex === 0) {
+      if (charStepResult === "await-compose") {
         setComposeStepPending(true);
         return;
       }
@@ -228,7 +287,7 @@ export default function App() {
       const activeTarget = exercises[nextExerciseIndex].targetText;
       const nextCharIndex = Math.min(
         current.currentCharIndex,
-        Math.max(0, activeTarget.length - 1),
+        getLastStepIndex(activeTarget),
       );
       return {
         ...current,
@@ -378,6 +437,10 @@ export default function App() {
   }
 
   if (screen.name === "exercise" && activeLesson && activeExercise) {
+    const currentStep = getStepAt(
+      activeExercise.targetText,
+      progress.currentCharIndex,
+    );
     const hintMessage =
       settings.inputMode === "gentle-hint" && hintLevel >= 2
         ? hintLevel >= 3
@@ -395,10 +458,7 @@ export default function App() {
         exerciseIndex={progress.currentExerciseIndex}
         charIndex={progress.currentCharIndex}
         settings={settings}
-        targetKey={getExpectedKey(
-          activeExercise.targetText,
-          progress.currentCharIndex,
-        )}
+        targetKey={currentStep?.key ?? "enter"}
         hintLevel={hintLevel}
         hintMessage={hintMessage}
         onPause={() => setScreen({ name: "pause", lessonId: activeLesson.id })}

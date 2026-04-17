@@ -126,4 +126,11 @@ describe('KeyboardQwertz', () => {
     expect(screen.getByText('<')).toBeInTheDocument();
     expect(screen.getByText('>')).toBeInTheDocument();
   });
+
+  it('highlights enter when enter is the target key', () => {
+    render(<KeyboardQwertz targetKey="enter" showHints={true} showFingers={false} />);
+
+    const enterKey = screen.getByText('Enter');
+    expect(enterKey).toHaveClass('border-(--accent)');
+  });
 });
