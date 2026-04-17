@@ -65,14 +65,14 @@ describe('App gentle input mode', () => {
     await user.click(screen.getByRole('button', { name: uiText.practiceIntro.start }));
 
     expect(screen.getByText('Tippe das Muster.')).toBeInTheDocument();
-    expect(screen.getByText(/1\/7/)).toBeInTheDocument();
+    expect(screen.getByText(/1\/5/)).toBeInTheDocument();
 
     typeText('quel qual qua que quo');
-    expect(screen.getByText(/2\/7/)).toBeInTheDocument();
+    expect(screen.getByText(/2\/5/)).toBeInTheDocument();
 
     typeText('qua? quel? quo? qua? quel?');
     expect(screen.getByText('Tippe die Wörter.')).toBeInTheDocument();
-    expect(screen.getByText(/3\/7/)).toBeInTheDocument();
+    expect(screen.getByText(/3\/5/)).toBeInTheDocument();
   });
 
   it('progresses through multiple sentence exercises in final sentence lesson', async () => {
@@ -92,10 +92,10 @@ describe('App gentle input mode', () => {
     await user.click(screen.getByRole('button', { name: uiText.home.continue }));
     await user.click(screen.getByRole('button', { name: uiText.practiceIntro.start }));
 
-    expect(screen.getByText(/1\/7/)).toBeInTheDocument();
+    expect(screen.getByText(/1\/5/)).toBeInTheDocument();
     typeText('Mia liest ein Buch laut.');
 
-    expect(screen.getByText(/2\/7/)).toBeInTheDocument();
+    expect(screen.getByText(/2\/5/)).toBeInTheDocument();
     expect(screen.queryByRole('heading', { name: 'Sätze' })).not.toBeInTheDocument();
   });
 

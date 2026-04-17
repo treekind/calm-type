@@ -105,7 +105,7 @@ localStorage keys:
 Each lesson:
 
 1. intro
-2. 7 exercises
+2. 5 exercises
 3. early exercises introduce and vary the new keys with chunks
 4. middle exercises use real words when practical
 5. sentences are optional and only used when they are real and natural
@@ -132,7 +132,7 @@ Forbidden:
 Exercise rules:
 
 - each lesson keeps its key introduction order
-- each lesson has 7 exercises
+- each lesson has 5 exercises
 - each exercise has exactly 5 words or 5 chunks
 - pattern exercises are chunk-only
 - real-word exercises are word-only

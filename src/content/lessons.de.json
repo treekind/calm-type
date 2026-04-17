@@ -40,22 +40,10 @@
           "id": "l1-e4",
           "type": "pattern",
           "instruction": "Tippe das Muster.",
-          "targetText": "asdf fj jklö fj asdf"
-        },
-        {
-          "id": "l1-e5",
-          "type": "pattern",
-          "instruction": "Tippe das Muster.",
-          "targetText": "fj asdf fj jklö fj"
-        },
-        {
-          "id": "l1-e6",
-          "type": "pattern",
-          "instruction": "Tippe das Muster.",
           "targetText": "asdf jklö fj asdf jklö"
         },
         {
-          "id": "l1-e7",
+          "id": "l1-e5",
           "type": "pattern",
           "instruction": "Tippe das Muster.",
           "targetText": "jklö fj asdf jklö fj"
@@ -103,22 +91,10 @@
           "id": "l2-e4",
           "type": "real-word",
           "instruction": "Tippe die Wörter.",
-          "targetText": "essen lesen nase sand alles"
+          "targetText": "nase lesen fass alle sand"
         },
         {
           "id": "l2-e5",
-          "type": "pattern",
-          "instruction": "Tippe das Muster.",
-          "targetText": "le se ne fj asdf"
-        },
-        {
-          "id": "l2-e6",
-          "type": "real-word",
-          "instruction": "Tippe die Wörter.",
-          "targetText": "nase essen lesen alles sand"
-        },
-        {
-          "id": "l2-e7",
           "type": "pattern",
           "instruction": "Tippe das Muster.",
           "targetText": "le se asdf jklö en"
@@ -168,22 +144,10 @@
           "id": "l3-e4",
           "type": "real-word",
           "instruction": "Tippe die Wörter.",
-          "targetText": "sirene reisen serie riese lesen"
-        },
-        {
-          "id": "l3-e5",
-          "type": "pattern",
-          "instruction": "Tippe das Muster.",
-          "targetText": "rei se ri fj asdf"
-        },
-        {
-          "id": "l3-e6",
-          "type": "real-word",
-          "instruction": "Tippe die Wörter.",
           "targetText": "reise sirene nase lesen riese"
         },
         {
-          "id": "l3-e7",
+          "id": "l3-e5",
           "type": "pattern",
           "instruction": "Tippe das Muster.",
           "targetText": "rei se asdf jklö ir"
@@ -235,22 +199,10 @@
           "id": "l4-e4",
           "type": "real-word",
           "instruction": "Tippe die Wörter.",
-          "targetText": "theater hatte hirte heiter reisen"
-        },
-        {
-          "id": "l4-e5",
-          "type": "pattern",
-          "instruction": "Tippe das Muster.",
-          "targetText": "the hai te fj asdf"
-        },
-        {
-          "id": "l4-e6",
-          "type": "real-word",
-          "instruction": "Tippe die Wörter.",
           "targetText": "theater hirte nase lesen heiter"
         },
         {
-          "id": "l4-e7",
+          "id": "l4-e5",
           "type": "pattern",
           "instruction": "Tippe das Muster.",
           "targetText": "the hai asdf jklö th"
@@ -292,7 +244,7 @@
           "id": "l5-e2",
           "type": "pattern",
           "instruction": "Tippe das Muster.",
-          "targetText": "such haus ruh hus cua"
+          "targetText": "such haus ruh hus cue"
         },
         {
           "id": "l5-e3",
@@ -304,22 +256,10 @@
           "id": "l5-e4",
           "type": "real-word",
           "instruction": "Tippe die Wörter.",
-          "targetText": "haus husten suche ruhe stunde"
+          "targetText": "suche reise haus lesen stunde"
         },
         {
           "id": "l5-e5",
-          "type": "pattern",
-          "instruction": "Tippe das Muster.",
-          "targetText": "such ruh hus fj asdf"
-        },
-        {
-          "id": "l5-e6",
-          "type": "real-word",
-          "instruction": "Tippe die Wörter.",
-          "targetText": "suche ruhe haus lesen stunde"
-        },
-        {
-          "id": "l5-e7",
           "type": "pattern",
           "instruction": "Tippe das Muster.",
           "targetText": "hus such asdf jklö uch"
@@ -389,22 +329,10 @@
           "id": "l6-e4",
           "type": "real-word",
           "instruction": "Tippe die Wörter.",
-          "targetText": "Hut Nina Hase Rita Nase"
+          "targetText": "Nase Reise Haus Tanne Kunde"
         },
         {
           "id": "l6-e5",
-          "type": "pattern",
-          "instruction": "Tippe das Muster.",
-          "targetText": "Na Se Ti Fj Jk"
-        },
-        {
-          "id": "l6-e6",
-          "type": "real-word",
-          "instruction": "Tippe die Wörter.",
-          "targetText": "Hase Tasse Nase Rita Nina"
-        },
-        {
-          "id": "l6-e7",
           "type": "pattern",
           "instruction": "Tippe das Muster.",
           "targetText": "Na Ri Asdf Jklö Ti"
@@ -460,24 +388,12 @@
         },
         {
           "id": "l7-e4",
-          "type": "real-word",
-          "instruction": "Tippe die Wörter.",
-          "targetText": "regen ring garten gans sirene"
-        },
-        {
-          "id": "l7-e5",
-          "type": "pattern",
-          "instruction": "Tippe das Muster.",
-          "targetText": "gar ten gin fj. ge"
-        },
-        {
-          "id": "l7-e6",
           "type": "real-sentence",
           "instruction": "Tippe den Satz.",
           "targetText": "Gina sagt: nein. Rita nickt."
         },
         {
-          "id": "l7-e7",
+          "id": "l7-e5",
           "type": "pattern",
           "instruction": "Tippe das Muster.",
           "targetText": "gar ten asdf jklö. reg"
@@ -536,24 +452,12 @@
         },
         {
           "id": "l8-e4",
-          "type": "real-word",
-          "instruction": "Tippe die Wörter.",
-          "targetText": "Mona Motor Morgen Mond Theater"
-        },
-        {
-          "id": "l8-e5",
-          "type": "pattern",
-          "instruction": "Tippe das Muster.",
-          "targetText": "mon mor fj kom mon"
-        },
-        {
-          "id": "l8-e6",
           "type": "real-sentence",
           "instruction": "Tippe den Satz.",
           "targetText": "Mona kommt. Oma ist da."
         },
         {
-          "id": "l8-e7",
+          "id": "l8-e5",
           "type": "pattern",
           "instruction": "Tippe das Muster.",
           "targetText": "mor mon asdf jklö kom"
@@ -614,24 +518,12 @@
         },
         {
           "id": "l9-e4",
-          "type": "real-word",
-          "instruction": "Tippe die Wörter.",
-          "targetText": "Wort Boden Wabe Brot Theater"
+          "type": "real-sentence",
+          "instruction": "Tippe den Satz.",
+          "targetText": "Ben wohnt oben. Oma liest."
         },
         {
           "id": "l9-e5",
-          "type": "pattern",
-          "instruction": "Tippe das Muster.",
-          "targetText": "bro wob fj wo bro"
-        },
-        {
-          "id": "l9-e6",
-          "type": "real-sentence",
-          "instruction": "Tippe den Satz.",
-          "targetText": "Ben wohnt oben. Oma da."
-        },
-        {
-          "id": "l9-e7",
           "type": "pattern",
           "instruction": "Tippe das Muster.",
           "targetText": "bro wob asdf jklö bod"
@@ -694,24 +586,12 @@
         },
         {
           "id": "l10-e4",
-          "type": "real-word",
-          "instruction": "Tippe die Wörter.",
-          "targetText": "Zone Zaun Zebra Wort Sonne"
-        },
-        {
-          "id": "l10-e5",
-          "type": "pattern",
-          "instruction": "Tippe das Muster.",
-          "targetText": "zo, za, fj ze; zo,"
-        },
-        {
-          "id": "l10-e6",
           "type": "real-sentence",
           "instruction": "Tippe den Satz.",
           "targetText": "Zora, wir warten. Oma kommt."
         },
         {
-          "id": "l10-e7",
+          "id": "l10-e5",
           "type": "pattern",
           "instruction": "Tippe das Muster.",
           "targetText": "ze bra asdf jklö zo"
@@ -777,24 +657,12 @@
         },
         {
           "id": "l11-e4",
-          "type": "real-word",
-          "instruction": "Tippe die Wörter.",
-          "targetText": "Pirat Paket Papa Vase Worte"
-        },
-        {
-          "id": "l11-e5",
-          "type": "pattern",
-          "instruction": "Tippe das Muster.",
-          "targetText": "pa pi va fj pa"
-        },
-        {
-          "id": "l11-e6",
           "type": "real-sentence",
           "instruction": "Tippe den Satz.",
           "targetText": "Vera packt Vase. Papa hilft."
         },
         {
-          "id": "l11-e7",
+          "id": "l11-e5",
           "type": "pattern",
           "instruction": "Tippe das Muster.",
           "targetText": "va se asdf jklö pi"
@@ -864,22 +732,10 @@
           "id": "l12-e4",
           "type": "real-word",
           "instruction": "Tippe die Wörter.",
-          "targetText": "Bäume Väter Bär Müde Türen"
+          "targetText": "Bäume Türen Reise Nase Hütte"
         },
         {
           "id": "l12-e5",
-          "type": "pattern",
-          "instruction": "Tippe das Muster.",
-          "targetText": "müd bär öä fj asdf"
-        },
-        {
-          "id": "l12-e6",
-          "type": "real-word",
-          "instruction": "Tippe die Wörter.",
-          "targetText": "Bäume Väter Müde Bär Türen"
-        },
-        {
-          "id": "l12-e7",
           "type": "pattern",
           "instruction": "Tippe das Muster.",
           "targetText": "bär müd asdf öä bä"
@@ -950,22 +806,10 @@
           "id": "l13-e4",
           "type": "real-word",
           "instruction": "Tippe die Wörter.",
-          "targetText": "Qual Quadrat Quelle Bär Müde"
-        },
-        {
-          "id": "l13-e5",
-          "type": "pattern",
-          "instruction": "Tippe das Muster.",
-          "targetText": "quel qual fj öä qua"
-        },
-        {
-          "id": "l13-e6",
-          "type": "real-word",
-          "instruction": "Tippe die Wörter.",
           "targetText": "Quelle Qualle Müde Bär Bäume"
         },
         {
-          "id": "l13-e7",
+          "id": "l13-e5",
           "type": "pattern",
           "instruction": "Tippe das Muster.",
           "targetText": "quel bär asdf öä qua"
@@ -1035,28 +879,16 @@
           "id": "l14-e3",
           "type": "real-word",
           "instruction": "Tippe die Wörter.",
-          "targetText": "Typ Hexe Text Yoga Typ"
+          "targetText": "Typ Hexe Text Yoga Taxi"
         },
         {
           "id": "l14-e4",
-          "type": "real-word",
-          "instruction": "Tippe die Wörter.",
-          "targetText": "Text Yoga Hexe Typ Text"
-        },
-        {
-          "id": "l14-e5",
-          "type": "pattern",
-          "instruction": "Tippe das Muster.",
-          "targetText": "xy x/y x-y asdf jklö"
-        },
-        {
-          "id": "l14-e6",
           "type": "pattern",
           "instruction": "Tippe das Muster.",
           "targetText": "asdf jklö x/y x-y xy"
         },
         {
-          "id": "l14-e7",
+          "id": "l14-e5",
           "type": "pattern",
           "instruction": "Tippe das Muster.",
           "targetText": "asdf xy jklö yx x/y"
@@ -1136,22 +968,10 @@
           "id": "l15-e4",
           "type": "pattern",
           "instruction": "Tippe das Muster.",
-          "targetText": "_ ' _ ' _"
-        },
-        {
-          "id": "l15-e5",
-          "type": "pattern",
-          "instruction": "Tippe das Muster.",
-          "targetText": "!? \"\" () _' !?"
-        },
-        {
-          "id": "l15-e6",
-          "type": "pattern",
-          "instruction": "Tippe das Muster.",
           "targetText": "asdf jklö !? \"\" ()"
         },
         {
-          "id": "l15-e7",
+          "id": "l15-e5",
           "type": "pattern",
           "instruction": "Tippe das Muster.",
           "targetText": "asdf !? jklö _' \"\""
@@ -1241,22 +1061,10 @@
           "id": "l16-e4",
           "type": "pattern",
           "instruction": "Tippe das Muster.",
-          "targetText": "1 3 5 7 9"
-        },
-        {
-          "id": "l16-e5",
-          "type": "pattern",
-          "instruction": "Tippe das Muster.",
-          "targetText": "11 22 33 44 55"
-        },
-        {
-          "id": "l16-e6",
-          "type": "pattern",
-          "instruction": "Tippe das Muster.",
           "targetText": "10 20 30 asdf jklö"
         },
         {
-          "id": "l16-e7",
+          "id": "l16-e5",
           "type": "pattern",
           "instruction": "Tippe das Muster.",
           "targetText": "12 34 56 78 90"
@@ -1326,25 +1134,13 @@
           "id": "l17-e4",
           "type": "pattern",
           "instruction": "Tippe das Muster.",
-          "targetText": "& § @ % &"
+          "targetText": "@ = § 20 &"
         },
         {
           "id": "l17-e5",
           "type": "pattern",
           "instruction": "Tippe das Muster.",
-          "targetText": "# % & * ="
-        },
-        {
-          "id": "l17-e6",
-          "type": "pattern",
-          "instruction": "Tippe das Muster.",
-          "targetText": "@ = § % &"
-        },
-        {
-          "id": "l17-e7",
-          "type": "pattern",
-          "instruction": "Tippe das Muster.",
-          "targetText": "@ % = & §"
+          "targetText": "@ % = ? §"
         }
       ]
     },
@@ -1470,24 +1266,12 @@
         },
         {
           "id": "l18-e4",
-          "type": "pattern",
-          "instruction": "Tippe das Muster.",
-          "targetText": "< > = & @"
+          "type": "real-sentence",
+          "instruction": "Tippe den Satz.",
+          "targetText": "Alles passt. Das passt gut."
         },
         {
           "id": "l18-e5",
-          "type": "pattern",
-          "instruction": "Tippe das Muster.",
-          "targetText": "M2 B3 Z4 A1 C2"
-        },
-        {
-          "id": "l18-e6",
-          "type": "real-sentence",
-          "instruction": "Tippe den Satz.",
-          "targetText": "Alles passt. Alles passt gut."
-        },
-        {
-          "id": "l18-e7",
           "type": "pattern",
           "instruction": "Tippe das Muster.",
           "targetText": "A1 C3 asdf jklö B2"
@@ -1561,22 +1345,10 @@
           "id": "l19-e4",
           "type": "real-sentence",
           "instruction": "Tippe den Satz.",
-          "targetText": "Vera fragt: Kommt ihr heute?"
-        },
-        {
-          "id": "l19-e5",
-          "type": "real-sentence",
-          "instruction": "Tippe den Satz.",
-          "targetText": "Ja, wir machen heute weiter."
-        },
-        {
-          "id": "l19-e6",
-          "type": "real-sentence",
-          "instruction": "Tippe den Satz.",
           "targetText": "Am Ende passt alles gut."
         },
         {
-          "id": "l19-e7",
+          "id": "l19-e5",
           "type": "real-sentence",
           "instruction": "Tippe den Satz.",
           "targetText": "Zora übt ruhig weiter heute."

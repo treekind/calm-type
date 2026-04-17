@@ -24,7 +24,7 @@ It focuses on emotional safety, predictable flow, and low-friction motor learnin
 
 - Lesson flow with intro, guided exercises, pause, and completion screens
 - Exercise types: single key, chunk patterns, real words, and real sentences
-- Lessons use a stable `7`-exercise rhythm with the last `2` exercises focused on broad review
+- Lessons use a stable `5`-exercise rhythm with the last `2` exercises focused on broad review
 - Each exercise uses exactly `5` words or `5` chunks for predictable pacing
 - Input modes:
   - `ignore` (default)
