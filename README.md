@@ -84,3 +84,7 @@ CalmType stores app state locally in the browser only:
 - `calmtype.progress`
 
 There is no backend, no account system, and no cloud sync in the MVP.
+
+## License
+
+This project is licensed under the MIT License. See `LICENSE` for details.
