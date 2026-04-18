@@ -2,7 +2,7 @@
 
 ## Overview
 
-CalmType is a fully client-side typing trainer for autistic children.
+CalmType is a typing trainer that prioritizes emotional safety, predictable flow, and meaningful language over scores, penalties, or pressure.
 
 The system prioritizes:
 
