@@ -44,12 +44,12 @@ export default function Layout({
       </main>
       <footer className="mt-4 text-center text-sm text-(--ink-soft)">
         <a
-          href="https://codeberg.org/maveonair/calm-type"
+          href="https://github.com/treekind/calm-type"
           target="_blank"
           rel="noopener noreferrer"
           className="underline decoration-(--line) underline-offset-4 hover:text-(--ink)"
         >
-          Source code on Codeberg
+          Source code on GitHub
         </a>
       </footer>
     </div>
